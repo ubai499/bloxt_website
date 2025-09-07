@@ -35,16 +35,7 @@
                                 </li>
 
                                 <li><a href="{{ route('service') }}">Services <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="{{ route('service')}}">Our Service</a></li>
-                                        <li><a href="#" class="span-arrow">Service Details <span><i class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
-                                            <ul class="sub-menu menu1">
-                                                <li><a href="service-left.html">Service Left</a></li>
-                                                <li><a href="service-right.html">Service Right</a></li>
-                                                <li><a href="service-single.html">Service Single</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+    
                                 </li>
 
                                 <li><a href="{{ route('blog') }}">Blogs <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>

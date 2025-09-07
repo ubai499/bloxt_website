@@ -165,7 +165,7 @@
                             <div class="heading1 text-center">
                                 <h2>Take the First Step Toward Energy Independence</h2>
                                 <div class="space32"></div>
-                                <form method="POST" action="{{ route('subscribe') }}">
+                                <form method="POST" action="#">
                                     @csrf
                                     <input type="email" name="email" placeholder="Enter Your Email" required>
                                     <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
