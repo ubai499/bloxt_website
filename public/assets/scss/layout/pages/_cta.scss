@@ -1,0 +1,602 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+.cta1 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .cta-content-bg {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 70px;
+        @media #{$xs} {
+            padding: 70px 24px;
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            width: 430px;
+            margin: 0 auto;
+            @media #{$xs} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                background: var(--ztc-bg-bg-1);
+                outline: none;
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.cta2 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .cta-content-bg {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 70px;
+        @media #{$xs} {
+            padding: 70px 24px 0 24px;
+        }
+        @media #{$md} {
+            padding: 70px 24px 0 24px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            width: 430px;
+            @media #{$xs} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                background: var(--ztc-bg-bg-1);
+                outline: none;
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
+        }
+        .images {
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            top: 0;
+            @media #{$xs} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            @media #{$md} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            img {
+                @media #{$xs} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                @media #{$md} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.cta3 {
+    position: relative;
+    z-index: 2;
+    .cta-content-bg {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 80px;
+        margin-bottom: -150px;
+        @media #{$xs} {
+            padding: 30px 24px 30px 24px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            @media #{$xs} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                background: var(--ztc-bg-bg-1);
+                outline: none;
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
+        }
+        .images {
+            form {
+                position: relative;
+                z-index: 1;
+                @media #{$xs} {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                @media #{$md} {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                input {
+                    width: 100%;
+                    border-radius: 1000px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+                    background: rgba(255, 255, 255, 0.10);
+                    outline: none;
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                    padding: 24px 16px;
+                    &::placeholder {
+                        color: var(--ztc-text-text-1);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-regular);
+                        line-height: 16px;
+                    }
+                }
+                button {
+                    border: none;
+                    outline: none;
+                    position: absolute;
+                    right: 8px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 04 //
+.cta4 {
+    position: relative;
+    z-index: 2;
+    .cta-content-bg {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+        @media #{$xs} {
+            padding: 40px;
+        }
+        @media #{$md} {
+            padding: 40px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            @media #{$xs} {
+                width: 100%;
+                margin-top: 20px;
+            }
+            @media #{$md} {
+                width: 100%;
+                margin-top: 20px;
+            }
+            input {
+                width: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                background: rgba(255, 255, 255, 0.10);
+                outline: none;
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px !important;
+                &::placeholder {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+// Homepage 05 //
+.cta5 {
+    position: relative;
+    z-index: 2;
+    .cta-content-bg {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        padding: 80px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+        @media #{$xs} {
+            padding: 40px;
+        }
+        @media #{$md} {
+            padding: 40px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            @media #{$xs} {
+                width: 100%;
+                margin-top: 20px;
+            }
+            @media #{$md} {
+                width: 100%;
+                margin-top: 20px;
+            }
+            input {
+                width: 100%;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.10);
+                outline: none;
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px !important;
+                &::placeholder {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+// Homepage 06 //
+.cta6 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .cta-content-bg {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 70px;
+        @media #{$xs} {
+            padding: 70px 24px 0 24px;
+        }
+        @media #{$md} {
+            padding: 70px 24px 0 24px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            width: 430px;
+            @media #{$xs} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.30);
+                backdrop-filter: blur(2px);
+                outline: none;
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 6px;
+                top: 5px;
+            }
+        }
+        .images {
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            top: 0;
+            @media #{$xs} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            @media #{$md} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            img {
+                @media #{$xs} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                @media #{$md} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Homepage 07 //
+.cta7 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .cta-content-bg {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 16px;
+        padding: 70px;
+        @media #{$xs} {
+            padding: 70px 24px 0 24px;
+        }
+        @media #{$md} {
+            padding: 70px 24px 0 24px;
+        }
+        .heading1 {
+            h2 {
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+            p {
+                color: var(--ztc-text-text-1);
+                opacity: 90%;
+            }
+        }
+        form {
+            position: relative;
+            z-index: 1;
+            width: 430px;
+            @media #{$xs} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.30);
+                backdrop-filter: blur(2px);
+                outline: none;
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 16px;
+                padding: 24px 16px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px;
+                }
+            }
+            button {
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 6px;
+                top: 5px;
+            }
+        }
+        .images {
+            position: absolute;
+            right: 40px;
+            bottom: 0;
+            top: 0;
+            @media #{$xs} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            @media #{$md} {
+                position: relative;
+                margin-top: 30px;
+                right: 0;
+            }
+            img {
+                @media #{$xs} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                @media #{$md} {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+/*============= CTA CSS AREA ENDS===============*/

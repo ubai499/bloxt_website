@@ -1,0 +1,738 @@
+@use '../../utils/' as * ;
+
+/*============= FAQ CSS AREA ===============*/
+.faq1 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .accordion-widget-area {
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-3);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    background: var(--ztc-bg-bg-4);  
+                    padding: 24px;
+                    border-radius: 14px;
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 27px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-1);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    color: var(--ztc-text-text-1);
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-1);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 02 //
+.faq2 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .accordion-widget-area {
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-5);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    border: 1px solid var(--ztc-bg-bg-4);
+                    padding: 24px;
+                    border-radius: 14px;
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-2);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 03 //
+.faq3 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--ztc-bg-bg-4);
+    .heading3 {
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+    }
+    .accordion-widget-area {
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-8);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    border: 1px solid rgba(0, 18, 51, 0.15);
+                    padding: 24px;
+                    border-radius: 14px;
+                    background: var(--ztc-bg-bg-4);
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-1);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                    color: var(--ztc-text-text-1);
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-1);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 04 //
+.faq4 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--ztc-bg-bg-4);
+    .accordion-widget-area {
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+        }
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-9);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    padding: 24px;
+                    border-radius: 14px;
+                    border-radius: 16px;
+                    border: 1px solid var(--ztc-bg-bg-4);
+                    background: var(--ztc-bg-bg-1);
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-2);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                    color: var(--ztc-text-text-2);
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+    .img1 {
+        img {
+            height: 240px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}
+
+// Homepage 05 //
+.faq5 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .accordion-widget-area {
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-4);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-bold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    border-radius: 16px 0px;
+                    border: 1px solid var(--Strok-Color, #EEE);
+                    padding: 24px;
+                    border-radius: 14px;
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-2);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 06 //
+.faq6 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .heading6 {
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+    }
+    .accordion-widget-area {
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-12);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    padding: 24px;
+                    border-radius: 14px;
+                    background: var(--ztc-bg-bg-4);
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-1);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                    color: var(--ztc-text-text-1);
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-1);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Homepage 07 //
+.faq7 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .accordion-widget-area {
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+        }
+        .accordion {
+            .accordion-item {
+                border-radius: none;
+                background: var(--ztc-bg-bg-15);
+                border: none;
+                border-radius: 16px;
+                button {
+                    color: var(--ztc-text-text-2);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s20);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-semibold);
+                    line-height: 20px;
+                    transition: all .4s;     
+                    border: none;
+                    box-shadow:  none;
+                    outline: none;  
+                    padding: 24px;
+                    border-radius: 14px;
+                    border-radius: 16px;
+                    border: 1px solid var(--ztc-border-border-1);
+                    background: var(--ztc-bg-bg-1);
+                    @media #{$xs} {
+                        line-height: 26px;
+                    }   
+                    &::after {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        visibility: visible;
+                        opacity: 1;
+                        transition: all 0.4s;                        
+                    } 
+                    &::before {
+                        height: 13px;
+                        width: 2px;
+                        background: var(--ztc-text-text-2);
+                        display: inline-block;
+                        content: "";
+                        position: absolute;
+                        z-index: 2;
+                        right: 24px;
+                        top: 28px;
+                        transform: rotate(-90deg);
+                        transition: all 0.4s;                     
+                    }    
+
+                }
+                .accordion-button:not(.collapsed)::after {
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .4s;
+                    
+                }
+                .accordion-button:not(.collapsed)::before {
+                   background: var(--ztc-bg-bg-1);
+                }
+                .accordion-button:not(.collapsed) {
+                    padding: 30px 30px 0 30px;
+                    background: none;
+                    border: none;
+                    color: var(--ztc-text-text-1);
+                }
+                .accordion-body {
+                    padding: 0;
+                    p {
+                        color: var(--ztc-text-text-1);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 26px; 
+                        padding: 20px 30px 30px 30px;
+                    }
+                }
+            }
+        }
+    }
+    .img1 {
+        img {
+            height: 240px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}
+
+// Inner Pages //
+.faq-inner {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .faq-main-section {
+        position: relative;
+        z-index: 1;
+        .accordion-item {
+            border-radius: none;
+            background: var(--ztc-bg-bg-3);
+            border: none;
+            border-radius: 16px;
+            button {
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s20);
+                font-style: normal;
+                font-weight: var(--ztc-weight-semibold);
+                line-height: 20px;
+                transition: all .4s;     
+                border: none;
+                box-shadow:  none;
+                outline: none;  
+                background: var(--ztc-bg-bg-4);  
+                padding: 24px;
+                border-radius: 14px;
+                @media #{$xs} {
+                    line-height: 26px;
+                }   
+                &::after {
+                    height: 13px;
+                    width: 2px;
+                    background: var(--ztc-text-text-2);
+                    display: inline-block;
+                    content: "";
+                    visibility: visible;
+                    opacity: 1;
+                    transition: all 0.4s;                        
+                } 
+                &::before {
+                    height: 13px;
+                    width: 2px;
+                    background: var(--ztc-text-text-2);
+                    display: inline-block;
+                    content: "";
+                    position: absolute;
+                    z-index: 2;
+                    right: 24px;
+                    top: 27px;
+                    transform: rotate(-90deg);
+                    transition: all 0.4s;                     
+                }    
+
+            }
+            .accordion-button:not(.collapsed)::after {
+                visibility: hidden;
+                opacity: 0;
+                transition: all .4s;
+                
+            }
+            .accordion-button:not(.collapsed)::before {
+               background: var(--ztc-bg-bg-1);
+            }
+            .accordion-button:not(.collapsed) {
+                padding: 30px 30px 0 30px;
+                background: none;
+                color: var(--ztc-text-text-1);
+            }
+            .accordion-body {
+                padding: 0;
+                p {
+                    color: var(--ztc-text-text-1);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px; 
+                    padding: 20px 30px 30px 30px;
+                }
+            }
+        }
+    }
+}
+/*============= FAQ CSS AREA ===============*/

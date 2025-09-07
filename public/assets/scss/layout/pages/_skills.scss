@@ -1,0 +1,208 @@
+@use '../../utils/' as * ;
+
+/*============= SKILLS CSS AREA STARTS ===============*/
+.skils1 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--ztc-bg-bg-4);
+    .elements1 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 0;
+    }
+    .elements2 {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
+    }
+    .elements3 {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        bottom: 0;
+    }
+    .elements4 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+    }
+    .skills-boxarea {
+        position: relative;
+        z-index: 1;
+        &:hover {
+            h3 {
+                background: var(--ztc-bg-bg-3);
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+            }
+        }
+        h3 {
+            background: var(--ztc-bg-bg-1);
+            border:1px solid rgba(0, 127, 95, 0.10);  
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all .4s;
+            color: var(--ztc-text-text-4);
+            text-align: center;
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s22);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            text-transform: uppercase;  
+            line-height: 48px; 
+            position: absolute;   
+        }
+        .content-area {
+            padding-left: 64px;
+            a {
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;    
+                display: inline-block;
+                transition: all .4s;
+                &:hover {
+                    color: var(--ztc-text-text-4);
+                    transition: all .4s;
+                }
+            }
+            
+            p {
+                color: var(--ztc-text-text-3);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 28px;
+            }
+        }
+    }
+    .images-area {
+        @media #{$xs} {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+// Homepage 02 //
+.skils2 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--ztc-bg-bg-4);
+    .elements1 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 0;
+    }
+    .elements2 {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 0;
+    }
+    .elements3 {
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        bottom: 0;
+    }
+    .elements4 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+    }
+    .skills-boxarea {
+        position: relative;
+        z-index: 1;
+        &:hover {
+            h3 {
+                background: var(--ztc-bg-bg-5);
+                color: var(--ztc-text-text-2);
+                transition: all .4s;
+            }
+        }
+        h3 {
+            background: var(--ztc-bg-bg-1);
+            border:1px solid rgba(0, 127, 95, 0.10);  
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all .4s;
+            color: var(--ztc-text-text-2);
+            text-align: center;
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s22);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            text-transform: uppercase;  
+            line-height: 48px; 
+            position: absolute;   
+        }
+        .content-area {
+            padding-left: 64px;
+            a {
+                color: var(--ztc-text-text-2);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s24);
+                font-style: normal;
+                font-weight: var(--ztc-weight-bold);
+                line-height: 24px;    
+                display: inline-block;
+                transition: all .4s;
+                &:hover {
+                    color: var(--ztc-text-text-5);
+                    transition: all .4s;
+                }
+            }
+            
+            p {
+                color: var(--ztc-text-text-3);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s16);
+                font-style: normal;
+                font-weight: var(--ztc-weight-regular);
+                line-height: 28px;
+            }
+        }
+    }
+    .images-area {
+        @media #{$xs} {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        @media #{$md} {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+/*============= SKILLS CSS AREA STARTS ===============*/
