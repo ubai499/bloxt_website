@@ -147,7 +147,8 @@
                                     </div>
                                 </li>
 
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="{{ route('about') }}">About Us</a></li>
+
 
                                 <li class="has-dropdown">
                                     <a href="#">Pages <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
@@ -158,13 +159,13 @@
                                         <li><a href="team-single.html">Team Single</a></li>
                                         <li><a href="testimonial1.html">Testimonials V1</a></li>
                                         <li><a href="testimonial2.html">Testimonials V2</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                         <li><a href="faq.html">FAQ's</a></li>
                                         <li><a href="404.html">404</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="#">Services <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
+                                <li><a href="{{ route('service') }}">Services <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
                                     <ul class="sub-menu">
                                         <li><a href="service.html">Our Service</a></li>
                                         <li><a href="#" class="span-arrow">Service Details <span><i class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
@@ -177,7 +178,7 @@
                                     </ul>
                                 </li>
 
-                                <li><a href="#">Blogs <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
+                                <li><a href="{{ route('blog') }}">Blogs <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
                                     <ul class="sub-menu">
                                         <li><a href="#" class="span-arrow">Our Blogs <span><i class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
                                             <ul class="sub-menu menu1">
@@ -204,7 +205,7 @@
                 <div class="col-lg-2 col-md-6 col-6">
                     <div class="vl-hero-btn d-none d-lg-block text-end">
                         <div class="hero-btn1">
-                            <a href="contact.html" class="vl-btn6">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('contact') }}" class="vl-btn6">Get Started <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="vl-header-action-item d-block d-lg-none">
