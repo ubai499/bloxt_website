@@ -87,7 +87,7 @@
                           <div class="space6"></div>
                           <ul>
                               <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="{{ route('about')}}">About Us</a></li>
                               <li><a href="service.html">Services</a></li>
                               <li><a href="project.html">Why Choose Us</a></li>
                               <li><a href="blog.html">Blog</a></li>
@@ -102,7 +102,7 @@
                           <div class="space4"></div>
                           <ul>
                               <li><a href="index.html">Customer Service</a></li>
-                              <li><a href="about.html">Installation Process</a></li>
+                              <li><a href="{{ route('about')}}">Installation Process</a></li>
                               <li><a href="service.html">Maintenance Plans</a></li>
                               <li><a href="project.html">Contact Us</a></li>
                               <li><a href="blog.html">Solar FAQ</a></li>

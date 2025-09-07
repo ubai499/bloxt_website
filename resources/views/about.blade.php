@@ -9,7 +9,7 @@
                     <h2>About Us</h2>
                     <div class="space18"></div>
                     <div class="btn-area1">
-                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>About Us</span></a>
+                        <a href="{{url('/')}}">Home <i class="fa-solid fa-angle-right"></i> <span>About Us</span></a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="space32"></div>
                     <div class="btn-area1" data-aos="fade-left" data-aos-duration="1300">
-                        <a href="about.html" class="vl-btn1">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('about')}}" class="vl-btn1">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -358,7 +358,7 @@
                                 and a passion for excellence.</p>
                             <div class="space32"></div>
                             <div class="btn-area1">
-                                <a href="contact.html" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{ route('contact')}}" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="tab-pane fade heading1" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab" tabindex="0">
@@ -369,7 +369,7 @@
                                 and a passion for excellence.</p>
                             <div class="space32"></div>
                             <div class="btn-area1">
-                                <a href="contact.html" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{ route('contact')}}" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="tab-pane fade heading1" id="pills-contact6" role="tabpanel" aria-labelledby="pills-contact6-tab" tabindex="0">
@@ -380,7 +380,7 @@
                                 and a passion for excellence.</p>
                             <div class="space32"></div>
                             <div class="btn-area1">
-                                <a href="contact.html" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{ route('contact')}}" class="vl-btn1">Get Started <i class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
 

@@ -6,7 +6,7 @@
         <div class="vl-offcanvas-wrapper">
             <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
                 <div class="vl-offcanvas-logo">
-                    <a href="index.html"><img src="{{ asset('assets/img/logo/logo1.png') }}" alt=""></a>
+                    <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo1.png') }}" alt=""></a>
                 </div>
                 <div class="vl-offcanvas-close">
                     <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
@@ -60,8 +60,8 @@
                     <div class="space38"></div>
                     <div class="play-btns-area" data-aos="fade-left" data-aos-duration="1200">
                         <div class="btn-area1">
-                            <a href="contact.html" class="vl-btn6">Discover Solarp <i class="fa-solid fa-arrow-right"></i></a>
-                            <a href="contact.html" class="vl-btn6 btn2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('contact')}}" class="vl-btn6">Discover Solarp <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('contact')}}" class="vl-btn6 btn2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
 
                     <div class="space32"></div>
                     <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-                        <a href="about.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('about')}}" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
             <div class="col-lg-3">
                 <div class="space24 d-lg-none d-block"></div>
                 <div class="btn-area1 text-end">
-                    <a href="service.html" class="vl-btn6">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('service')}}" class="vl-btn6">View All Services <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -257,7 +257,7 @@
             <div class="col-lg-3">
                 <div class="btn-area1 text-end">
                     <div class="space24 d-lg-none d-block"></div>
-                    <a href="service.html" class="vl-btn6">See The Benefits <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('service')}}" class="vl-btn6">See The Benefits <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -363,7 +363,7 @@
             <div class="col-lg-3">
                 <div class="btn-area1 text-end">
                     <div class="space24 d-lg-none d-block"></div>
-                    <a href="{{ asset('service.html') }}" class="vl-btn6">View All Team <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('service')}}" class="vl-btn6">View All Team <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -749,7 +749,7 @@
             <div class="col-lg-3">
                 <div class="btn-area1 text-end">
                     <div class="space24 d-lg-none d-block"></div>
-                    <a href="blog.html" class="vl-btn6">View All Blogs <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('blog')}}" class="vl-btn6">View All Blogs <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
