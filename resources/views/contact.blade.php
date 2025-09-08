@@ -38,7 +38,7 @@
                         </div>
                         <div class="content">
                             <h4>Contact us</h4>
-                            <a href="mailto:eitechsolut@gmail.com">789 Inner Lane, Holy park, <br> California, USA</a>
+                            <a href="mailto:info@bloxt.co.uk">Anfield business centre 58 Breckfield Road <br> South, L6 5DR</a>
                         </div>
                     </div>
                     <div class="space30 d-lg-none d-block"></div>
@@ -50,8 +50,8 @@
                             <img src="{{ asset('assets/img/icons/phn2.svg') }}" alt="">
                         </div>
                         <div class="content">
-                            <h4>Call or text</h4>
-                            <a href="tel:+11234567890">+00 987 654 3210 <br> +00 654 294 4967</a>
+                            <h4>Call Us</h4>
+                            <a href="tel:01513324244">0151 332 4244</a>
                         </div>
                     </div>
                     <div class="space30 d-lg-none d-block"></div>
@@ -64,8 +64,8 @@
                         </div>
                         <div class="content">
                             <h4>Email us today</h4>
-                            <a href="mailto:eitechsolut@gmail.com">infomailsolarp@gmail.com
-                                <br> Supportsolarp@gmail.com</a>
+                            <a href="mailto:info@bloxt.co.uk">info@bloxt.co.uk
+                                <br> william@bloxt.co.uk</a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
             <div class="col-lg-6 m-auto">
                 <div class="heading1 text-center space-margin60">
                     <h5 class="vl-section-subtitle" data-aos="zoom-in" data-aos-duration="900">
-                        <img src="{{ asset('assets/img/icons/sub-logo1.svg') }}" alt="">cONTACT US
+                        <img src="{{ asset('assets/img/icons/sub-logo1.svg') }}" alt="">CONTACT US
                     </h5>
                     <div class="space16"></div>
                     <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Request a Free Quote</h2>
@@ -120,12 +120,7 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="input-area">
                                 <select name="country" id="country" class="country-area nice-select">
-                                    <option value="1" data-display="Solar Services">Solar Services</option>
-                                    <option value=""> Installation of solar panels</option>
-                                    <option value=""> Maintenance or repair</option>
-                                    <option value=""> Solar energy providers</option>
-                                    <option value=""> Solar financing or incentives</option>
-                                    <option value=""> Something else entirely?</option>
+                                    <option value="Boiler Services" data-display="Boiler Services">Boiler Services</option>
                                 </select>
                             </div>
                         </div>
@@ -149,7 +144,7 @@
 </div>
 
 <div class="contact-maps-area">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4506257.120552435!2d88.67021924228865!3d21.954385721237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704088968016!5m2!1sen!2sbd"
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d304336.0961291516!2d-2.95843!3d53.421519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b217289e8b7a1%3A0x7c68f8d5b8569da2!2sAnfield%20Business%20Centre%2C%2058%20Breckfield%20Rd%20S%2C%20Liverpool%20L6%205DR%2C%20UK!5e0!3m2!1sen!2sus!4v1757370582864!5m2!1sen!2sus"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

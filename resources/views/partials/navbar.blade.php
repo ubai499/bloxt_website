@@ -5,7 +5,7 @@
             <div class="row align-items-center row-bg1">
                 <div class="col-lg-2 col-md-6 col-6">
                     <div class="vl-logo">
-                        <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo5.png') }}" alt=""></a>
+                        <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo5.webp') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-8 d-none d-lg-block">

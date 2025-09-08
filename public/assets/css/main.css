@@ -497,17 +497,17 @@ img {
     --ztc-text-text-1: #fff;
     --ztc-text-text-2: #001233;
     --ztc-text-text-3: #676B74;
-    --ztc-text-text-4: #007F5F;
+    --ztc-text-text-4: #b79825;
     --ztc-text-text-5: #00D348;
     --ztc-text-text-6: #FFDC00;
     --ztc-text-text-7: #06C15A;
     --ztc-text-text-8: #00D348;
-    --ztc-text-text-9: #007200;
+    --ztc-text-text-9: #b79825;
     --ztc-text-text-10: #4867FF;
     --ztc-text-text-11: #FC7646;
     --ztc-bg-bg-1: #fff;
     --ztc-bg-bg-2: #001233;
-    --ztc-bg-bg-3: #007F5F;
+    --ztc-bg-bg-3: #b79825;
     --ztc-bg-bg-4: #F6F8FA;
     --ztc-bg-bg-5: linear-gradient(90deg, #00D348 0%, #93F125 100%);
     --ztc-bg-bg-6: linear-gradient(90deg, #93F125 0%, #00D348 100%);
@@ -515,7 +515,7 @@ img {
     --ztc-bg-bg-8: #06C15A;
     --ztc-bg-bg-9: #00D348;
     --ztc-bg-bg-10: #03010C;
-    --ztc-bg-bg-11: #007200;
+    --ztc-bg-bg-11: #b79825;
     --ztc-bg-bg-12: linear-gradient(90deg, #15B2FF 0%, #4867FF 100%);
     --ztc-bg-bg-13: linear-gradient(90deg, #4867FF 0%, #15B2FF 100%);
     --ztc-bg-bg-14: #000816;
@@ -10428,7 +10428,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
     width: 100%;
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #001233 2.66%, rgba(0, 18, 51, 0) 100%);
+    /* background: linear-gradient(180deg, #001233 2.66%, rgba(0, 18, 51, 0) 100%); */
+        background: #001233;
     z-index: -1;
 }
 
@@ -14302,7 +14303,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     right: 0;
     bottom: 0;
     z-index: 9999999999;
-    background-color: var(--ztc-text-text-2);
+    background-color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20291,7 +20292,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     height: 0;
     width: 100%;
     border-radius: 8px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #007F5F 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #b79825 100%);
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
     transition: all 0.4s;
 }

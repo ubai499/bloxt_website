@@ -3,7 +3,7 @@
     <div class="loading-container">
         <div class="loading"></div>
         <div id="loading-icon">
-            <img src="{{ asset('assets/img/logo/preloader.png') }}" alt="">
+            <img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="">
         </div>
     </div>
 </div>
