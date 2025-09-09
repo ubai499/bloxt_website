@@ -9,19 +9,19 @@
                     <h2>Our Blog</h2>
                     <div class="space18"></div>
                     <div class="btn-area1">
-                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Our Blog</span></a>
+                        <a href="{{ route('/')}}">Home <i class="fa-solid fa-angle-right"></i> <span>Our Blog</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="hero-img1">
-        <div class="img1">
+        <!-- <div class="img1">
             <img src="{{asset('assets/img/elements/elements18.png')}}" alt="">
         </div>
         <div class="img2">
             <img src="{{asset('assets/img/elements/elements19.png')}}" alt="">
-        </div>
+        </div> -->
     </div>
 </div>
 <!--===== HERO AREA ENDS =======-->
@@ -56,12 +56,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Innovations in Solar Technology</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Innovations in Solar Technology</a></h4>
                         <div class="space16"></div>
                         <p>The solar industry is advancing at a rapid pace, bringing us exciting innovations like solar shingles, AI energy optimization, and more efficient photovoltaic cells. Discover how these technologies.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -93,12 +93,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Community Solar Programs</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Community Solar Programs</a></h4>
                         <div class="space16"></div>
                         <p>Community solar programs are making renewable energy accessible to people who can't install their own panels. This blog explains how these programs work and why they're a game-changer for clean.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -130,12 +130,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">How to Maintain Your Solar Panels</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a></h4>
                         <div class="space16"></div>
                         <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure they operate efficiently for years to come. This guide provides tips on cleaning, inspections, and maximizing.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -167,12 +167,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Solar Installation What to Expect</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a></h4>
                         <div class="space16"></div>
                         <p>Curious about what the solar installation process entails? In this blog, we walk you through each step—from the initial consultation to final implementation so you know exactly what to expect when making.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -204,12 +204,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">How to Maintain Your Solar Panels</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a></h4>
                         <div class="space16"></div>
                         <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure they operate efficiently for years to come. This guide provides tips on cleaning, inspections, and maximizing.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -241,12 +241,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Solar Installation What to Expect</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a></h4>
                         <div class="space16"></div>
                         <p>Curious about what the solar installation process entails? In this blog, we walk you through each step—from the initial consultation to final implementation so you know exactly what to expect when making.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -278,12 +278,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">How to Maintain Your Solar Panels</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a></h4>
                         <div class="space16"></div>
                         <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure they operate efficiently for years to come. This guide provides tips on cleaning, inspections, and maximizing.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -316,12 +316,12 @@
                             </ul>
                         </div>
                         <div class="space24"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Solar Installation What to Expect</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a></h4>
                         <div class="space16"></div>
                         <p>Curious about what the solar installation process entails? In this blog, we walk you through each step—from the initial consultation to final implementation so you know exactly what to expect when making.</p>
                         <div class="space24"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,7 @@
                     <div class="row">
                         <div class="col-lg-6 m-auto">
                             <div class="heading1 text-center">
-                                <h2>Take the First Step Toward Energy Independence</h2>
+                                <h2>Reliable Boiler Care – Warmth You Can Trust.</h2>
                                 <div class="space32"></div>
                                 <form>
                                     <input type="text" placeholder="Enter Your Email">

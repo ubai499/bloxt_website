@@ -16,12 +16,12 @@
         </div>
     </div>
     <div class="hero-img1">
-        <div class="img1">
+        <!-- <div class="img1">
             <img src="{{ asset('assets/img/elements/elements18.png') }}" alt="">
         </div>
         <div class="img2">
             <img src="{{ asset('assets/img/elements/elements19.png') }}" alt="">
-        </div>
+        </div> -->
     </div>
 </div>
 <!--===== HERO AREA ENDS =======-->
@@ -38,7 +38,8 @@
                         </div>
                         <div class="content">
                             <h4>Contact us</h4>
-                            <a href="mailto:info@bloxt.co.uk">Anfield business centre 58 Breckfield Road <br> South, L6 5DR</a>
+                            <a href="mailto:info@bloxt.co.uk">Sephton House, North Mersey Business Centre,
+Woodward Road, Knowsley Industrial Park, L33 7UY</a>
                         </div>
                     </div>
                     <div class="space30 d-lg-none d-block"></div>
@@ -121,6 +122,9 @@
                             <div class="input-area">
                                 <select name="country" id="country" class="country-area nice-select">
                                     <option value="Boiler Services" data-display="Boiler Services">Boiler Services</option>
+                                    <option value="">Boiler Installation</option>
+                                    <option value="">Boiler Replacement</option>
+                                    <option value="">Boiler Repair</option>
                                 </select>
                             </div>
                         </div>
@@ -144,9 +148,7 @@
 </div>
 
 <div class="contact-maps-area">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d304336.0961291516!2d-2.95843!3d53.421519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b217289e8b7a1%3A0x7c68f8d5b8569da2!2sAnfield%20Business%20Centre%2C%2058%20Breckfield%20Rd%20S%2C%20Liverpool%20L6%205DR%2C%20UK!5e0!3m2!1sen!2sus!4v1757370582864!5m2!1sen!2sus"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.8444539925836!2d-2.8497226999999996!3d53.48910899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b1854563adec5%3A0xc57b93c9dc90d084!2sNorth%20Mersey%20Business%20Centre!5e0!3m2!1sen!2s!4v1757453747729!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <!--===== CONTACT AREA ENDS =======-->
 <!--===== CTA AREA STARTS =======-->
@@ -158,7 +160,7 @@
                     <div class="row">
                         <div class="col-lg-6 m-auto">
                             <div class="heading1 text-center">
-                                <h2>Take the First Step Toward Energy Independence</h2>
+                                <h2>Reliable Boiler Care – Warmth You Can Trust.</h2>
                                 <div class="space32"></div>
                                 <form method="POST" action="#">
                                     @csrf

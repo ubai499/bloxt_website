@@ -41,44 +41,6 @@
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
 
-<!--===== HERO AREA STARTS =======-->
-<!-- <div class="hero5-section" style="background-image: url('{{ asset('assets/img/all-images/bg/hero-bg4.png') }}'); background-position: center top; background-size: cover; background-repeat: no-repeat;">
-    <img src="{{ asset('assets/img/elements/elements2.png') }}" alt="" class="elements8 aniamtion-key-2">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="hero-header">
-                    <h5 data-aos="fade-left" data-aos-duration="900">
-                        <img src="{{ asset('assets/img/icons/sub-logo1.svg') }}" alt=""> Premium Solar Panels
-                    </h5>
-                    <div class="space16"></div>
-                    <h1 data-aos="fade-left" data-aos-duration="1000">Revolutionize Your Energy Use with Solar Power</h1>
-                    <div class="space16"></div>
-                    <p data-aos="fade-left" data-aos-duration="1100">
-                        We provide innovative solar solutions that help you save money, and embrace energy independence whether you're a homeowner or a business owner.
-                    </p>
-                    <div class="space38"></div>
-                    <div class="play-btns-area" data-aos="fade-left" data-aos-duration="1200">
-                        <div class="btn-area1">
-                            <a href="{{ route('contact')}}" class="vl-btn6">Discover Solarp <i class="fa-solid fa-arrow-right"></i></a>
-                            <a href="{{ route('contact')}}" class="vl-btn6 btn2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <div class="images" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-                    <div class="img1">
-                        <img src="{{ asset('assets/img/all-images/hero/hero-img5.png') }}" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!--===== HERO AREA ENDS =======-->
-
 
 <div class="hero5-section" style="background:#FFF;">
     <div class="container">
@@ -89,7 +51,7 @@
                         <img src="{{ asset('assets/img/icons/sub-logo1.svg') }}" alt=""> BLOXT LTD
                     </h5>
                     <div class="space16"></div>
-                    <img src="https://iheat.co.uk/img/worcester-4000-which.png" alt="" width="350">
+                    <img src="{{ asset('assets/img/all-images/hero/boiler.png') }}" alt="" width="350" style="margin-left:24px;">
                     <h1 class="text-center" data-aos="fade-left" data-aos-duration="1000">Fast, fixed price boiler installs </h1>
                     <div class="space16"></div>
                     <p data-aos="fade-left" data-aos-duration="1100">
@@ -98,7 +60,7 @@
                     <div class="space38"></div>
                     <div class="play-btns-area" data-aos="fade-left" data-aos-duration="1200">
                         <div class="btn-area1">
-                            <a href="{{ route('contact')}}" class="vl-btn6">GET FIXED PRICE <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('quote_boiler')}}" class="vl-btn6">GET FIXED PRICE <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -141,95 +103,6 @@
 </div>
 <!--===== ABOUT AREA ENDS =======-->
 
-<!--===== SERVICE AREA STARTS =======-->
-<div class="service5 sp2">
-    <img src="{{ asset('assets/img/elements/elements1.png') }}" alt="" class="elements1">
-    <img src="{{ asset('assets/img/elements/elements3.png') }}" alt="" class="elements2">
-    <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements3">
-    <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements4">
-    <div class="container">
-        <div class="row align-items-center space-margin60">
-            <div class="col-lg-6">
-                <div class="heading5">
-                    <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M9.4408 6.23921C9.70644 5.97357 9.83926 5.84075 9.9113 5.6821C9.96979 5.55333 9.99909 5.41323 9.99713 5.27181C9.99471 5.09758 9.92626 4.92266 9.78937 4.57282L8.00003 0L6.21065 4.5728C6.07375 4.92265 6.0053 5.09757 6.00288 5.2718C6.00092 5.41322 6.03022 5.55333 6.08871 5.6821C6.16076 5.84075 6.29358 5.97358 6.55923 6.23922L7.63346 7.31344C7.76446 7.44444 7.82996 7.50993 7.90594 7.53331C7.96725 7.55217 8.03281 7.55217 8.09412 7.5333C8.1701 7.50993 8.23559 7.44443 8.36659 7.31343L9.4408 6.23921Z" fill="#b79825" />
-                            <path d="M9.4408 9.76079C9.70644 10.0264 9.83926 10.1593 9.9113 10.3179C9.96979 10.4467 9.99909 10.5868 9.99713 10.7282C9.99471 10.9024 9.92626 11.0773 9.78937 11.4272L8.00003 16L6.21065 11.4272C6.07375 11.0774 6.0053 10.9024 6.00288 10.7282C6.00092 10.5868 6.03022 10.4467 6.08871 10.3179C6.16076 10.1592 6.29358 10.0264 6.55923 9.76078L7.63346 8.68656C7.76446 8.55556 7.82996 8.49007 7.90594 8.46669C7.96725 8.44783 8.03281 8.44783 8.09412 8.46669C8.1701 8.49007 8.23559 8.55557 8.36659 8.68657L9.4408 9.76079Z" fill="#b79825" />
-                            <path d="M16 8.00003L11.4272 9.78937C11.0773 9.92626 10.9024 9.99471 10.7282 9.99713C10.5868 9.99909 10.4467 9.96979 10.3179 9.9113C10.1593 9.83926 10.0264 9.70644 9.76079 9.4408L8.68657 8.36659C8.55557 8.23559 8.49007 8.1701 8.46669 8.09412C8.44783 8.03281 8.44783 7.96725 8.46669 7.90594C8.49007 7.82996 8.55556 7.76446 8.68656 7.63346L9.76078 6.55923C10.0264 6.29358 10.1592 6.16076 10.3179 6.08871C10.4467 6.03022 10.5868 6.00092 10.7282 6.00288C10.9024 6.0053 11.0774 6.07375 11.4272 6.21065L16 8.00003Z" fill="#b79825" />
-                            <path d="M6.23921 9.4408C5.97357 9.70644 5.84075 9.83926 5.6821 9.9113C5.55333 9.96979 5.41323 9.99909 5.27181 9.99713C5.09758 9.99471 4.92266 9.92626 4.57282 9.78937L0 8.00003L4.5728 6.21065C4.92265 6.07375 5.09757 6.0053 5.2718 6.00288C5.41322 6.00092 5.55333 6.03022 5.6821 6.08871C5.84075 6.16076 5.97358 6.29358 6.23922 6.55923L7.31344 7.63346C7.44444 7.76446 7.50993 7.82996 7.53331 7.90594C7.55217 7.96725 7.55217 8.03281 7.5333 8.09412C7.50993 8.1701 7.44443 8.2356 7.31343 8.36659L6.23921 9.4408Z" fill="#b79825" />
-                        </svg> Our Services
-                    </h5>
-                    <div class="space16"></div>
-                    <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">
-                        Customized Solar Services for Homes and Businesses
-                    </h2>
-                </div>
-            </div>
-
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3">
-                <div class="space24 d-lg-none d-block"></div>
-                <div class="btn-area1 text-end">
-                    <a href="{{ route('service')}}" class="vl-btn6">View All Services <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="900" data-aos-offset="80">
-                <div class="service5-boxarea">
-                    <div class="img1">
-                        <img src="{{ asset('assets/img/all-images/service/s-img1.png') }}" alt="">
-                    </div>
-                    <div class="content-area">
-                        <a href="service-single.html" class="title">Residential Solar Solutions</a>
-                        <div class="space10"></div>
-                        <p>Bring the power of the sun to your home with our Residential Solar Solutions.</p>
-                        <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="900" data-aos-offset="100">
-                <div class="service5-boxarea">
-                    <div class="content-area">
-                        <a href="service-single.html" class="title">Commercial Solar Systems</a>
-                        <div class="space10"></div>
-                        <p>Sustainable energy solutions through our Commercial Solar Systems.</p>
-                        <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="img1">
-                        <img src="{{ asset('assets/img/all-images/service/s-img2.png') }}" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="900" data-aos-offset="120">
-                <div class="service5-boxarea">
-                    <div class="img1">
-                        <img src="{{ asset('assets/img/all-images/service/s-img3.png') }}" alt="">
-                    </div>
-                    <div class="content-area">
-                        <a href="service-single.html" class="title">Solar Energy Consultation</a>
-                        <div class="space10"></div>
-                        <p>Our experts will assess your property, evaluate your energy needs.</p>
-                        <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--===== SERVICE AREA ENDS =======-->
 
 <!--===== CHOOSE AREA STARTS =======-->
 <div class="choose5 sp2">
@@ -242,16 +115,16 @@
                             <path d="M9.4408 9.76079C9.70644 10.0264 9.83926 10.1593 9.9113 10.3179C9.96979 10.4467 9.99909 10.5868 9.99713 10.7282C9.99471 10.9024 9.92626 11.0773 9.78937 11.4272L8.00003 16L6.21065 11.4272C6.07375 11.0774 6.0053 10.9024 6.00288 10.7282C6.00092 10.5868 6.03022 10.4467 6.08871 10.3179C6.16076 10.1592 6.29358 10.0264 6.55923 9.76078L7.63346 8.68656C7.76446 8.55556 7.82996 8.49007 7.90594 8.46669C7.96725 8.44783 8.03281 8.44783 8.09412 8.46669C8.1701 8.49007 8.23559 8.55557 8.36659 8.68657L9.4408 9.76079Z" fill="#b79825" />
                             <path d="M16 8.00003L11.4272 9.78937C11.0773 9.92626 10.9024 9.99471 10.7282 9.99713C10.5868 9.99909 10.4467 9.96979 10.3179 9.9113C10.1593 9.83926 10.0264 9.70644 9.76079 9.4408L8.68657 8.36659C8.55557 8.23559 8.49007 8.1701 8.46669 8.09412C8.44783 8.03281 8.44783 7.96725 8.46669 7.90594C8.49007 7.82996 8.55556 7.76446 8.68656 7.63346L9.76078 6.55923C10.0264 6.29358 10.1592 6.16076 10.3179 6.08871C10.4467 6.03022 10.5868 6.00092 10.7282 6.00288C10.9024 6.0053 11.0774 6.07375 11.4272 6.21065L16 8.00003Z" fill="#b79825" />
                             <path d="M6.23921 9.4408C5.97357 9.70644 5.84075 9.83926 5.6821 9.9113C5.55333 9.96979 5.41323 9.99909 5.27181 9.99713C5.09758 9.99471 4.92266 9.92626 4.57282 9.78937L0 8.00003L4.5728 6.21065C4.92265 6.07375 5.09757 6.0053 5.2718 6.00288C5.41322 6.00092 5.55333 6.03022 5.6821 6.08871C5.84075 6.16076 5.97358 6.29358 6.23922 6.55923L7.31344 7.63346C7.44444 7.76446 7.50993 7.82996 7.53331 7.90594C7.55217 7.96725 7.55217 8.03281 7.5333 8.09412C7.50993 8.1701 7.44443 8.2356 7.31343 8.36659L6.23921 9.4408Z" fill="#b79825" />
-                        </svg> Why Chooes Us</h5>
+                        </svg> Why Choose Us</h5>
                     <div class="space16"></div>
-                    <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Why We're Your Best Choice for Solar Energy</h2>
+                    <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Keeping Homes Warm, Safe & Efficient – Every Season.</h2>
                 </div>
             </div>
             <div class="col-lg-4"></div>
             <div class="col-lg-3">
                 <div class="btn-area1 text-end">
                     <div class="space24 d-lg-none d-block"></div>
-                    <a href="{{ route('service')}}" class="vl-btn6">See The Benefits <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="{{ route('quote_boiler')}}" class="vl-btn6">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -264,13 +137,10 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="service-single.html" class="title">Residential Solar Solutions</a>
+                        <a href="{{ route('about')}}" class="title">Trusted Expertise</a>
                         <div class="space16"></div>
-                        <p>With years of expertise, we deliver reliable and efficient solar energy solutions tailored to your needs.</p>
+                        <p>Our certified engineers bring years of experience in installing, repairing, and servicing boilers. We follow strict industry standards, ensuring your home stays safe, warm, and energy-efficient.</p>
                         <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -282,13 +152,10 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="service-single.html" class="title">Customized Solutions</a>
+                        <a href="{{ route('about')}}" class="title">Reliable & Affordable Service</a>
                         <div class="space16"></div>
-                        <p>With years of experience, our team of certified professionals ensures flawless installation and service.</p>
+                        <p>We believe in transparent pricing with no hidden costs. From emergency repairs to routine maintenance, we deliver reliable solutions that fit your budget without compromising on quality.</p>
                         <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -299,13 +166,10 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="service-single.html" class="title">Premium Quality Products</a>
+                        <a href="{{ route('about')}}" class="title">Customer-First Approach</a>
                         <div class="space16"></div>
-                        <p>We use state-of-the-art solar panels and equipment designed for maximum durability and efficiency</p>
+                        <p>At Bloxt Ltd, your comfort comes first. We provide fast response times, clear communication, and a friendly team dedicated to giving you peace of mind—every step of the way.</p>
                         <div class="space28"></div>
-                        <div class="btn-area1">
-                            <a href="service-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -369,7 +233,7 @@
                                 <img src="{{ asset('assets/img/all-images/testimonials/t-img1.png') }}" alt="">
                             </div>
                             <div class="text">
-                                <a href="team.html">Katona Beatrix</a>
+                                <a href="{{ route('contact')}}">Katona Beatrix</a>
                                 <div class="space8"></div>
                                 <p>Califonia, USA</p>
                             </div>
@@ -395,7 +259,7 @@
                                 <img src="{{ asset('assets/img/all-images/testimonials/t-img2.png') }}" alt="">
                             </div>
                             <div class="text">
-                                <a href="team.html">Ebony Swihart</a>
+                                <a href="{{ route('contact')}}">Ebony Swihart</a>
                                 <div class="space8"></div>
                                 <p>New York, USA</p>
                             </div>
@@ -421,7 +285,7 @@
                                 <img src="{{ asset('assets/img/all-images/testimonials/t-img3.png') }}" alt="">
                             </div>
                             <div class="text">
-                                <a href="team.html">Daniel Porter</a>
+                                <a href="{{ route('contact')}}">Daniel Porter</a>
                                 <div class="space8"></div>
                                 <p>Miami, USA</p>
                             </div>
@@ -447,7 +311,7 @@
                                 <img src="{{ asset('assets/img/all-images/testimonials/t-img4.png') }}" alt="">
                             </div>
                             <div class="text">
-                                <a href="team.html">Katona Beatrix</a>
+                                <a href="{{ route('contact')}}">Katona Beatrix</a>
                                 <div class="space8"></div>
                                 <p>Califonia, USA</p>
                             </div>
@@ -472,18 +336,12 @@
                             <path d="M9.4408 9.76079C9.70644 10.0264 9.83926 10.1593 9.9113 10.3179C9.96979 10.4467 9.99909 10.5868 9.99713 10.7282C9.99471 10.9024 9.92626 11.0773 9.78937 11.4272L8.00003 16L6.21065 11.4272C6.07375 11.0774 6.0053 10.9024 6.00288 10.7282C6.00092 10.5868 6.03022 10.4467 6.08871 10.3179C6.16076 10.1592 6.29358 10.0264 6.55923 9.76078L7.63346 8.68656C7.76446 8.55556 7.82996 8.49007 7.90594 8.46669C7.96725 8.44783 8.03281 8.44783 8.09412 8.46669C8.1701 8.49007 8.23559 8.55557 8.36659 8.68657L9.4408 9.76079Z" fill="#b79825" />
                             <path d="M16 8.00003L11.4272 9.78937C11.0773 9.92626 10.9024 9.99471 10.7282 9.99713C10.5868 9.99909 10.4467 9.96979 10.3179 9.9113C10.1593 9.83926 10.0264 9.70644 9.76079 9.4408L8.68657 8.36659C8.55557 8.23559 8.49007 8.1701 8.46669 8.09412C8.44783 8.03281 8.44783 7.96725 8.46669 7.90594C8.49007 7.82996 8.55556 7.76446 8.68656 7.63346L9.76078 6.55923C10.0264 6.29358 10.1592 6.16076 10.3179 6.08871C10.4467 6.03022 10.5868 6.00092 10.7282 6.00288C10.9024 6.0053 11.0774 6.07375 11.4272 6.21065L16 8.00003Z" fill="#b79825" />
                             <path d="M6.23921 9.4408C5.97357 9.70644 5.84075 9.83926 5.6821 9.9113C5.55333 9.96979 5.41323 9.99909 5.27181 9.99713C5.09758 9.99471 4.92266 9.92626 4.57282 9.78937L0 8.00003L4.5728 6.21065C4.92265 6.07375 5.09757 6.0053 5.2718 6.00288C5.41322 6.00092 5.55333 6.03022 5.6821 6.08871C5.84075 6.16076 5.97358 6.29358 6.23922 6.55923L7.31344 7.63346C7.44444 7.76446 7.50993 7.82996 7.53331 7.90594C7.55217 7.96725 7.55217 8.03281 7.5333 8.09412C7.50993 8.1701 7.44443 8.2356 7.31343 8.36659L6.23921 9.4408Z" fill="#b79825" />
-                        </svg> FAQ</h5>
+                        </svg> FAQ's</h5>
                     <div class="space16"></div>
-                    <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Frequently Asked Questions About Going Solar</h2>
+                    <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Reliable Boiler Care – Warmth You Can Trust.</h2>
                 </div>
             </div>
-            <div class="col-lg-2"></div>
-            <div class="col-lg-3">
-                <div class="btn-area1 text-end">
-                    <div class="space24 d-lg-none d-block"></div>
-                    <a href="faq.html" class="vl-btn6">Explore FAQ <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
+            <div class="col-lg-4"></div>
         </div>
 
         <div class="row">
@@ -493,12 +351,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="800">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    1. Will solar panels save me money?
+                                    1. How often should my boiler be serviced?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>We recommend having your boiler serviced annually to ensure it runs safely and efficiently, and to prevent unexpected breakdowns.</p>
                                 </div>
                             </div>
                         </div>
@@ -506,12 +364,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="900">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    2. Can I install solar panels on a flat roof?
+                                    2. Do you offer emergency boiler repair services?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>Yes, our engineers are available for emergency callouts to restore your heating and hot water as quickly as possible.</p>
                                 </div>
                             </div>
                         </div>
@@ -519,12 +377,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    3. Do I need to maintain my solar panels?
+                                    3. How long does a typical boiler service take?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>A standard service usually takes between 45 minutes to 1 hour, depending on the type and condition of your boiler.</p>
                                 </div>
                             </div>
                         </div>
@@ -532,12 +390,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    4. How much can I save with solar energy?
+                                    4. Will servicing my boiler help lower energy bills?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>Yes. Regular servicing improves efficiency, which can reduce energy consumption and help save on monthly bills.</p>
                                 </div>
                             </div>
                         </div>
@@ -551,12 +409,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="800">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                    5. How does solar panel warranty work?
+                                    5. Do you work with all types of boilers?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>We service, repair, and install a wide range of boilers, including combi, system, and conventional models from leading brands.</p>
                                 </div>
                             </div>
                         </div>
@@ -564,12 +422,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="900">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    6. Can I install solar panels myself?
+                                    6. Can you replace my old boiler with a more energy-efficient one?
                                 </button>
                             </h2>
                             <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>Absolutely. We can assess your current system and recommend a modern, energy-efficient boiler that fits your home and budget.</p>
                                 </div>
                             </div>
                         </div>
@@ -577,12 +435,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    7. How do solar panels work?
+                                    7. Is your work guaranteed?
                                 </button>
                             </h2>
                             <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>Yes, all our services come with a guarantee for parts and labor, giving you peace of mind.</p>
                                 </div>
                             </div>
                         </div>
@@ -590,12 +448,12 @@
                         <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                    8. How long do solar panels last?
+                                    8. Do you offer service plans or maintenance packages?
                                 </button>
                             </h2>
                             <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                                 <div class="accordion-body">
-                                    <p>Solar panels can significantly reduce your monthly electricity bills by generating your own energy.</p>
+                                    <p>Yes, we provide flexible service plans that include annual servicing and priority support to keep your boiler in top condition year-round.</p>
                                 </div>
                             </div>
                         </div>
@@ -662,11 +520,11 @@
                             </ul>
                         </div>
                         <div class="space16"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Solar Panel Maintenance Tips for Maximum Efficiency</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Panel Maintenance Tips for Maximum Efficiency</a></h4>
 
                         <div class="space32"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -698,11 +556,11 @@
                             </ul>
                         </div>
                         <div class="space16"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Trends and Innovations in Renewable Energy</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Trends and Innovations in Renewable Energy</a></h4>
 
                         <div class="space32"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -734,11 +592,11 @@
                             </ul>
                         </div>
                         <div class="space16"></div>
-                        <h4 class="vl-blog-1-title"><a href="blog-single.html">Top Benefits of Switching to Solar Energy</a></h4>
+                        <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Top Benefits of Switching to Solar Energy</a></h4>
 
                         <div class="space32"></div>
                         <div class="vl-blog-1-icon">
-                            <a href="blog-single.html" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

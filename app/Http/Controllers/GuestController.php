@@ -29,4 +29,19 @@ class GuestController extends Controller
     {
         return view('service');
     }
+
+    public function products()
+    {
+        return view('products');
+    }
+
+    public function faqs()
+    {
+        return view('faqs');
+    }
+    public function quote_boiler()
+    {
+        return view('quote_boiler');
+    }
+    
 }

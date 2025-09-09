@@ -16,12 +16,12 @@
         </div>
     </div>
     <div class="hero-img1">
-        <div class="img1">
+        <!-- <div class="img1">
             <img src="{{asset('assets/img/elements/elements18.png')}}" alt="">
         </div>
         <div class="img2">
             <img src="{{asset('assets/img/elements/elements19.png')}}" alt="">
-        </div>
+        </div> -->
     </div>
 </div>
 <!--===== HERO AREA ENDS =======-->
@@ -161,7 +161,7 @@
                                 <img src="{{asset('assets/img/all-images/testimonials/t-img1.png')}}" alt="">
                             </div>
                             <div class="text">
-                                <a href="team.html">Katona Beatrix</a>
+                                <a href="{{ route('contact')}}">Katona Beatrix</a>
                                 <div class="space8"></div>
                                 <p>Califonia, USA</p>
                             </div>
@@ -184,7 +184,7 @@
                     <div class="row">
                         <div class="col-lg-6 m-auto">
                             <div class="heading1 text-center">
-                                <h2>Take the First Step Toward Energy Independence</h2>
+                                <h2>Reliable Boiler Care – Warmth You Can Trust.</h2>
                                 <div class="space32"></div>
                                 <form>
                                     <input type="text" placeholder="Enter Your Email">
