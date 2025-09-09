@@ -146,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="back-btn" data-back="1">← Back</a>
+                    <!-- <a href="#" class="back-btn" data-back="1">← Back</a> -->
                 </div>
 
                 <!-- Step 3 -->
@@ -214,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="back-btn" data-back="2">← Back</a>
+                    <!-- <a href="#" class="back-btn" data-back="2">← Back</a> -->
                 </div>
 
 
@@ -318,7 +318,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="back-btn" data-back="4">← Back</a>
+                    <!-- <a href="#" class="back-btn" data-back="4">← Back</a> -->
                 </div>
 
                 <div class="step-section step6" data-step="6">
@@ -347,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="back-btn" data-back="5">← Back</a>
+                    <!-- <a href="#" class="back-btn" data-back="5">← Back</a> -->
                 </div>
 
                 <div class="step-section step7" data-step="7">
@@ -407,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="back-btn" data-back="6">← Back</a>
+                    <!-- <a href="#" class="back-btn" data-back="6">← Back</a> -->
                 </div>
 
                 <div class="step-section step8" data-step="8">
