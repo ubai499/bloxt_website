@@ -89,16 +89,18 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="service1-boxarea next-step" data-next="2" data-field="fuel" data-value="Mains Gas">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/gas.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">Mains Gas</a></div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="service1-boxarea next-step" data-next="2" data-field="fuel" data-value="LPG">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/gas.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">LPG</a></div>
                             </div>
                         </div>
@@ -113,8 +115,9 @@
                             <div class="service1-boxarea next-step" data-next="3" data-field="boiler_type"
                                 data-value="Combi Boiler">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">Combi Boiler</a></div>
                             </div>
                         </div>
@@ -122,8 +125,9 @@
                             <div class="service1-boxarea next-step" data-next="3" data-field="boiler_type"
                                 data-value="Regular Boiler">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">Regular Boiler</a></div>
                             </div>
                         </div>
@@ -131,8 +135,9 @@
                             <div class="service1-boxarea next-step" data-next="3" data-field="boiler_type"
                                 data-value="System Boiler">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">System Boiler</a></div>
                             </div>
                         </div>
@@ -140,8 +145,9 @@
                             <div class="service1-boxarea next-step" data-next="3" data-field="boiler_type"
                                 data-value="Back Boiler">
                                 <center>
-                                    <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt=""></div>
+                                    <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt=""></div>
                                 </center>
+                                <div class="space38"></div>
                                 <div class="content-area text-center"><a href="#" class="title">Back Boiler</a></div>
                             </div>
                         </div>
@@ -159,9 +165,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="boiler_working"
                                     data-value="Yes">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/tick.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Yes</a></div>
                                 </div>
                             </div>
@@ -169,9 +176,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="boiler_working"
                                     data-value="No">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/cross.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">No</a></div>
                                 </div>
                             </div>
@@ -186,9 +194,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="water_flow"
                                     data-value="Fast">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/water_flow.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Fast</a></div>
                                 </div>
                             </div>
@@ -196,9 +205,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="water_flow"
                                     data-value="Average">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/water_flow.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Average</a></div>
                                 </div>
                             </div>
@@ -206,9 +216,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="water_flow"
                                     data-value="Slow">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/water_flow.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Slow</a></div>
                                 </div>
                             </div>
@@ -226,9 +237,10 @@
                                 <div class="service1-boxarea next-step" data-next="5" data-field="boiler_working"
                                     data-value="Yes">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/tick.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Yes</a></div>
                                 </div>
                             </div>
@@ -236,9 +248,10 @@
                                 <div class="service1-boxarea next-step" data-next="5" data-field="boiler_working"
                                     data-value="No">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/cross.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">No</a></div>
                                 </div>
                             </div>
@@ -251,9 +264,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="boiler_working"
                                     data-value="Yes">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/tick.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Yes</a></div>
                                 </div>
                             </div>
@@ -261,9 +275,10 @@
                                 <div class="service1-boxarea next-step" data-next="4" data-field="boiler_working"
                                     data-value="No">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/cross.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">No</a></div>
                                 </div>
                             </div>
@@ -280,9 +295,10 @@
                                 <div class="service1-boxarea next-step" data-next="6" data-field="current_boiler_age"
                                     data-value="0-10 Years">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">0-10 Years</a></div>
                                 </div>
                             </div>
@@ -290,9 +306,10 @@
                                 <div class="service1-boxarea next-step" data-next="6" data-field="current_boiler_age"
                                     data-value="11-20 Years">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">11-20 Years</a></div>
                                 </div>
                             </div>
@@ -300,9 +317,10 @@
                                 <div class="service1-boxarea next-step" data-next="6" data-field="current_boiler_age"
                                     data-value="21-25 Years">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">21-25 Years</a></div>
                                 </div>
                             </div>
@@ -310,9 +328,10 @@
                                 <div class="service1-boxarea next-step" data-next="6" data-field="current_boiler_age"
                                     data-value="26+ Years">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/boiler.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">26+ Years</a></div>
                                 </div>
                             </div>
@@ -329,9 +348,10 @@
                                 <div class="service1-boxarea next-step" data-next="7" data-field="move_boiler"
                                     data-value="Yes">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/tick.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Yes</a></div>
                                 </div>
                             </div>
@@ -339,9 +359,10 @@
                                 <div class="service1-boxarea next-step" data-next="7" data-field="move_boiler"
                                     data-value="No">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/cross.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">No</a></div>
                                 </div>
                             </div>
@@ -358,9 +379,10 @@
                                 <div class="service1-boxarea next-step" data-next="8" data-field="current_boiler_location"
                                     data-value="Kitchen">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/kitchen.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Kitchen</a></div>
                                 </div>
                             </div>
@@ -368,9 +390,10 @@
                                 <div class="service1-boxarea next-step" data-next="8" data-field="current_boiler_location"
                                     data-value="Utility Room">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/utility_room.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Utility Room</a></div>
                                 </div>
                             </div>
@@ -378,9 +401,10 @@
                                 <div class="service1-boxarea next-step" data-next="8" data-field="current_boiler_location"
                                     data-value="Garage">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/garage.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Garage</a></div>
                                 </div>
                             </div>
@@ -388,9 +412,10 @@
                                 <div class="service1-boxarea next-step" data-next="8" data-field="current_boiler_location"
                                     data-value="Airing Cupboard">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/airing_cupboard.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Airing Cupboard</a>
                                     </div>
                                 </div>
@@ -399,9 +424,10 @@
                                 <div class="service1-boxarea next-step" data-next="8" data-field="current_boiler_location"
                                     data-value="Other">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/other.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Other</a></div>
                                 </div>
                             </div>
@@ -418,9 +444,10 @@
                                 <div class="service1-boxarea next-step" data-next="9" data-field="new_boiler_location"
                                     data-value="Same Room">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/other.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Same Room (+£495)</a>
                                     </div>
                                 </div>
@@ -429,10 +456,11 @@
                                 <div class="service1-boxarea next-step" data-next="9" data-field="new_boiler_location"
                                     data-value="Same Floor">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/other.png')}}" alt="">
                                         </div>
                                     </center>
-                                    <div class="content-area text-center"><a href="#" class="title">Same Floor (+£795)</a>
+                                    <div class="space38"></div>
+                                    <div class="content-area text-center"><a href="#" class="title">Same Floor <br/>(+£795)</a>
                                     </div>
                                 </div>
                             </div>
@@ -440,21 +468,23 @@
                                 <div class="service1-boxarea next-step" data-next="9" data-field="new_boiler_location"
                                     data-value="Another Floor">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/other.png')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Another Floor
-                                            (+£895)</a></div>
+                                            <br/>(+£895)</a></div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3">
                                 <div class="service1-boxarea next-step" data-next="9" data-field="new_boiler_location"
                                     data-value="Loft/Attic">
                                     <center>
-                                        <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
+                                        <div class="icons"><img src="{{asset('assets/img/icons/other.png')}}" alt="">
                                         </div>
                                     </center>
-                                    <div class="content-area text-center"><a href="#" class="title">Loft/Attic (+£895)</a>
+                                    <div class="space38"></div>
+                                    <div class="content-area text-center"><a href="#" class="title">Loft/Attic <br/>(+£895)</a>
                                     </div>
                                 </div>
                             </div>
@@ -474,6 +504,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Semi-Detached</a></div>
                                 </div>
                             </div>
@@ -484,6 +515,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Detached</a></div>
                                 </div>
                             </div>
@@ -494,6 +526,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Terraced</a></div>
                                 </div>
                             </div>
@@ -504,6 +537,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Bungalow</a></div>
                                 </div>
                             </div>
@@ -514,6 +548,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Apartment</a></div>
                                 </div>
                             </div>
@@ -533,6 +568,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Ground Floor</a></div>
                                 </div>
                             </div>
@@ -543,6 +579,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">First Floor</a></div>
                                 </div>
                             </div>
@@ -553,6 +590,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Second Floor +</a></div>
                                 </div>
                             </div>
@@ -571,6 +609,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">1</a></div>
                                 </div>
                             </div>
@@ -580,6 +619,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">2</a></div>
                                 </div>
                             </div>
@@ -589,6 +629,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">3</a></div>
                                 </div>
                             </div>
@@ -598,6 +639,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">4</a></div>
                                 </div>
                             </div>
@@ -608,6 +650,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">5+</a></div>
                                 </div>
                             </div>
@@ -626,6 +669,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">0</a></div>
                                 </div>
                             </div>
@@ -635,6 +679,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">1</a></div>
                                 </div>
                             </div>
@@ -644,6 +689,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">2</a></div>
                                 </div>
                             </div>
@@ -654,6 +700,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">3+</a></div>
                                 </div>
                             </div>
@@ -673,6 +720,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">0</a></div>
                                 </div>
                             </div>
@@ -683,6 +731,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">1</a></div>
                                 </div>
                             </div>
@@ -693,6 +742,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">2</a></div>
                                 </div>
                             </div>
@@ -703,6 +753,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">3+</a></div>
                                 </div>
                             </div>
@@ -722,6 +773,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">External Wall</a></div>
                                 </div>
                             </div>
@@ -732,6 +784,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Roof</a></div>
                                 </div>
                             </div>
@@ -751,6 +804,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Under 1 Metre</a></div>
                                 </div>
                             </div>
@@ -761,6 +815,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">1-2 Metre</a></div>
                                 </div>
                             </div>
@@ -771,6 +826,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">2-3 Metre</a></div>
                                 </div>
                             </div>
@@ -781,6 +837,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">3+ Metre</a></div>
                                 </div>
                             </div>
@@ -791,6 +848,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Unsure</a></div>
                                 </div>
                             </div>
@@ -810,6 +868,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">More Than 30cm</a></div>
                                 </div>
                             </div>
@@ -820,6 +879,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Less Than 30cm</a></div>
                                 </div>
                             </div>
@@ -839,6 +899,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Pitched</a></div>
                                 </div>
                             </div>
@@ -849,6 +910,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Flat</a></div>
                                 </div>
                             </div>
@@ -868,6 +930,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Higher Up</a></div>
                                 </div>
                             </div>
@@ -878,6 +941,7 @@
                                         <div class="icons"><img src="{{asset('assets/img/icons/s-icons1.svg')}}" alt="">
                                         </div>
                                     </center>
+                                    <div class="space38"></div>
                                     <div class="content-area text-center"><a href="#" class="title">Lower Down</a></div>
                                 </div>
                             </div>
