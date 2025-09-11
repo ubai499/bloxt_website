@@ -9,7 +9,7 @@
                     <h2>Our Blog</h2>
                     <div class="space18"></div>
                     <div class="btn-area1">
-                        <a href="{{ route('/')}}">Home <i class="fa-solid fa-angle-right"></i> <span>Our Blog</span></a>
+                        <a href="{{ url('/')}}">Home <i class="fa-solid fa-angle-right"></i> <span>Our Blog</span></a>
                     </div>
                 </div>
             </div>
