@@ -10,7 +10,7 @@
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item">
-                                    <a href="javascript: void(0);">Bloxt Technologies</a>
+                                    <a href="javascript: void(0);">Bloxt</a>
                                 </li>
                                 <li class="breadcrumb-item">
                                     <a href="javascript: void(0);">Dashboards</a>

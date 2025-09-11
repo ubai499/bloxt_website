@@ -11,7 +11,7 @@
                             <div class="page-title-box">
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt Technologies</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
                                         <li class="breadcrumb-item active">Blog List</li>
                                     </ol>
@@ -55,10 +55,10 @@
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                                    </form> 
+                                                    </form>
                                             </tr>
                                             @endforeach
-                                      
+
                                         </tbody>
                                     </table>
 
@@ -76,5 +76,5 @@
 
             </div>
             <!-- content -->
-           
+
 @endsection

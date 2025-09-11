@@ -7,7 +7,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt Technologies</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt </a></li>
                             <li class="breadcrumb-item"><a href="{{ route('admin.blog_categories') }}">Blog Categories</a></li>
                             <li class="breadcrumb-item active">Create Blog Category</li>
                         </ol>
@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row mt-3">
                                 <div class="col-12 text-center">
                                     <button type="submit" class="btn btn-success waves-effect waves-light m-1">

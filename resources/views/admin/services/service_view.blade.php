@@ -8,7 +8,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt Technologies</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt</a></li>
                             <li class="breadcrumb-item"><a href="{{route('admin.services')}}">Services</a></li>
                             <li class="breadcrumb-item active">{{ ucwords(str_replace('-', ' ', @$service->service_name)) }}Details</li>
                         </ol>
@@ -33,21 +33,21 @@
                                     @endif
                                 </div>
                                 <hr>
-                                
+
                                 <h4>Service Description</h4>
-                             
+
                                     {!! $service->service_description !!}
-                                
+
                                 <hr>
-                                
+
                                 @if($service->faq_details)
-                                 
-                                
+
+
                                         {!! $service->faq_details !!}
-                                    
+
                                     <hr>
                                 @endif
-                                
+
                                 <h4>SEO Metadata</h4>
                                 <div class="mb-4">
                                     <p><strong>Meta Title:</strong> {{ $seo_data['page_title'] ?? 'N/A' }}</p>
@@ -58,7 +58,7 @@
                                 </div>
 
                                 <div class="mb-4">
-                                    
+
                                     <p class="text-muted">Created at: <strong>{{ $service->created_at->format('Y-m-d H:i:s') }}</strong></p>
                                 </div>
                                 <div class="mb-4">

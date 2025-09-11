@@ -3,9 +3,7 @@
             <div class="logo-box">
                 <div class="header-left">
                         <div class="logo">
-                            <a href="{{route('dashboard')}}" class="header-logo">
-                                <img src="{{asset('assets/img/logo/final_logo.png')}}" alt="logo-img" style="width:120px;">
-                            </a>
+                            <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo5.webp') }}" alt=""></a>
                         </div>
                     </div>
             </div>

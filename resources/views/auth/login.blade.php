@@ -11,7 +11,7 @@
                         <a href="{{ url('/') }}" class="logo logo-dark text-center">
                             <div class="logo">
                                 <a href="{{url('/')}}" class="header-logo">
-                                    <img src="{{asset('assets/img/logo/final_logo.png')}}" alt="logo-img" style="width:120px;">
+                                    <img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="logo-img" style="width:120px;"></a>
                                 </a>
                             </div>
                         </a>
@@ -89,7 +89,7 @@
                 available and sample app that really fit our need. <i class="mdi mdi-format-quote-close"></i>
             </p>
             <h5 class="text-white">
-                - Fadlisaad (Bloxt Technologies Admin User)
+                - Fadlisaad (Bloxt Admin User)
             </h5>
         </div>
         <!-- end auth-user-testimonial-->

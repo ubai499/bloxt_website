@@ -8,7 +8,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt Technologies</a></li>
+                            <li class="breadcrumb-item"><a href="javascript: void(0);">Bloxt</a></li>
                             <li class="breadcrumb-item"><a href="{{route('admin.services')}}">Services</a></li>
                             <li class="breadcrumb-item active">Edit Service</li>
                         </ol>
@@ -47,7 +47,7 @@
                                             <input type="file" name="service_image" />
                                         </div>
                                     </div>
-                                    
+
                                     <div class="mb-3">
                                         <label for="service_description" class="form-label">Service Description</label>
                                         <textarea class="form-control" name="service_description" id="service_description" rows="12" placeholder="Enter a brief description of the service..">{{ old('service_description', $service->service_description) }}</textarea>
@@ -57,10 +57,10 @@
                                         <label for="faq_details" class="form-label">FAQ Details</label>
                                         <textarea class="form-control" name="faq_details" id="faq_details" rows="6" placeholder="Enter the FAQ content here.">{{ old('faq_details', $service->faq_details) }}</textarea>
                                     </div>
-                                    
+
                                 </div>
                             </div>
-                            
+
                             <div class="row mt-4">
                                 <div class="col-12">
                                     <h4>SEO Metadata</h4>

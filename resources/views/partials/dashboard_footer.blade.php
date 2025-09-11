@@ -7,8 +7,8 @@
              <script>
                document.write(new Date().getFullYear());
              </script>
-             © Bloxt Technologies
-            
+             © Bloxt
+
            </div>
          </div>
        </div>
@@ -65,7 +65,7 @@
 
     <!-- Datatables init -->
     <script src="{{asset('dashboard_assets/js/pages/datatables.init.js')}}"></script>
-   
+
    </body>
 
    </html>

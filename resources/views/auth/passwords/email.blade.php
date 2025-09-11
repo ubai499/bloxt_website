@@ -70,7 +70,7 @@
                     available and sample app that really fit our need. <i class="mdi mdi-format-quote-close"></i>
                 </p>
                 <h5 class="text-white">
-                    - Fadlisaad (Bloxt Technologies Admin User)
+                    - Fadlisaad (Bloxt Admin User)
                 </h5>
             </div>
             <!-- end auth-user-testimonial-->
