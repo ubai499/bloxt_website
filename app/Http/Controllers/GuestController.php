@@ -17,7 +17,12 @@ class GuestController extends Controller
 
     public function about_us()
     {
-        return view('about');
+        $data = [
+            'page_title' => "About Bloxt Ltd | Boiler Installation & Renewables Liverpool",
+            'page_description' => "About Bloxt Ltd: Family-run company in Liverpool delivering boiler installs, ECO heating, and green energy solutions with trusted expertise",
+            'page_keywords' => "about Bloxt Technologies, company profile, IT solutions, app development, web development",
+        ];
+        return view('about',$data);
     }
 
     public function blog()
@@ -37,11 +42,16 @@ class GuestController extends Controller
 
     public function faqs()
     {
-        return view('faqs');
+        $data = [
+            'page_title' => "FAQs | Bloxt Boiler Services & Repairs Liverpool",
+            'page_description' => "Find answers to common boiler questions. From servicing to emergency repairs, Bloxt Ltd offers expert boiler care in Liverpool",
+            'page_keywords' => "about Bloxt Technologies, company profile, IT solutions, app development, web development",
+        ];
+        return view('faqs',$data);
     }
     public function quote_boiler()
     {
         return view('quote_boiler');
     }
-    
+
 }
