@@ -58,7 +58,7 @@
                                                 Recommended thumbnail size 800x400 (px).
                                             </p>
                                             <div class="fallback">
-                                                <input type="file" name="image" />
+                                                <input type="file" name="image" required/>
                                             </div>
                                         </div>
                                     </div>

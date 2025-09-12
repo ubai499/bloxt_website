@@ -26,7 +26,10 @@ class HomeController extends Controller
     public function blog_store(Request $request)
     {
         try {
-            $path = $request->file('image')->move(public_path('assets/img/news'), 'post-' . time() . '.jpg');
+
+            if($request->has('image')){
+                $path = $request->file('image')->move(public_path('assets/img/news'), 'post-' . time() . '.jpg');
+            }
             DB::beginTransaction();
             Blog::create([
                 'title' => $request->title,
@@ -44,7 +47,7 @@ class HomeController extends Controller
             ]);
             DB::commit();
             return redirect()->route('admin.blogs')->with('success', 'Blog created successfully.');
-        } 
+        }
         catch (\Exception $e) {
             return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
         }
@@ -84,11 +87,11 @@ class HomeController extends Controller
             $blog->update($data);
             DB::commit();
             return redirect()->route('admin.blogs')->with('success', 'Blog updated successfully.');
-        } 
+        }
         catch (\Exception $e) {
             return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
         }
-    }   
+    }
 
     public function blog_view($id)
     {
@@ -105,7 +108,7 @@ class HomeController extends Controller
                 DB::beginTransaction();
                 $blog->delete();
                 DB::commit();
-            }  
+            }
             return redirect()->route('admin.blogs')->with('success', 'Blog deleted successfully.');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
