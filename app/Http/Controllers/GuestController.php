@@ -54,4 +54,9 @@ class GuestController extends Controller
         return view('quote_boiler');
     }
 
+
+    public function blog_details(){
+        return view('blog_detail');
+    }
+
 }
