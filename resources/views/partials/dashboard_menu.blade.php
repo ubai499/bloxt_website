@@ -117,6 +117,29 @@
                             </ul>
                         </div>
                     </li>
+
+
+                    <li class="menu-item">
+                        <a href="#product" data-bs-toggle="collapse" class="menu-link">
+                            <span class="menu-icon"><i data-feather="briefcase"></i></span>
+                            <span class="menu-text"> Products</span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="product">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="{{route('admin.products')}}" class="menu-link">
+                                        <span class="menu-text">View Products</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="{{route('admin.product.create')}}" class="menu-link">
+                                        <span class="menu-text">Create Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 <!--- End Menu -->
                 <div class="clearfix"></div>

@@ -39,6 +39,10 @@ class GuestController extends Controller
     {
         return view('products');
     }
+    public function product_details()
+    {
+        return view('product_detail');
+    }
 
     public function faqs()
     {

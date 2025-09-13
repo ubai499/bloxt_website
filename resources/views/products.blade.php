@@ -37,11 +37,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,11 +52,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -67,11 +67,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -82,11 +82,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -97,11 +97,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -112,11 +112,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -127,11 +127,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -142,11 +142,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -157,11 +157,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -172,11 +172,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -187,11 +187,11 @@
                     </div>
                     <div class="space30"></div>
                     <div class="content-area">
-                        <a href="{{ route('quote_boiler')}}" class="title">Boiler Name</a>
+                        <a href="{{ route('product_details')}}" class="title">Boiler Name</a>
                         <div class="space16"></div>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <div class="space24"></div>
-                        <a href="{{ route('quote_boiler')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="{{ route('product_details')}}" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

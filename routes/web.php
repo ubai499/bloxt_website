@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ Route::get('/blog', [GuestController::class, 'blog'])->name('blog');
 Route::get('/blog_details', [GuestController::class, 'blog_details'])->name('blog_details');
 Route::get('/service', [GuestController::class, 'service'])->name('service');
 Route::get('/products', [GuestController::class, 'products'])->name('products');
+Route::get('/product_details', [GuestController::class, 'product_details'])->name('product_details');
 Route::get('/faqs', [GuestController::class, 'faqs'])->name('faqs');
 Route::get('/quote/boiler', [GuestController::class, 'quote_boiler'])->name('quote_boiler');
 
@@ -61,4 +63,13 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::put('/service/update/{id}', [ServiceController::class, 'service_update'])->name('admin.service.update');
     Route::get('/service/view/{id}', [ServiceController::class, 'service_view'])->name('admin.service.view');
     Route::delete('/service/delete/{id}', [ServiceController::class, 'service_delete'])->name('admin.service.delete');
+
+
+    Route::get('/products', [ProductController::class, 'product_list'])->name('admin.products');
+    Route::get('/products/create', [ProductController::class, 'product_create'])->name('admin.product.create');
+    Route::post('/products/store', [ProductController::class, 'product_store'])->name('admin.product.store');
+    Route::get('/products/edit/{id}', [ProductController::class, 'product_edit'])->name('admin.product.edit');
+    Route::put('/products/update/{id}', [ProductController::class, 'product_update'])->name('admin.product.update');
+    Route::get('/products/view/{id}', [ProductController::class, 'product_view'])->name('admin.product.view');
+    Route::delete('/products/delete/{id}', [ProductController::class, 'product_delete'])->name('admin.product.delete');
 });
