@@ -93,28 +93,31 @@ Woodward Road, Knowsley Industrial Park, L33 7UY</a>
             </div>
 
             <div class="col-lg-6">
+                <form action="{{ route('contact.submit') }}" id="contact-form" method="POST"
+                                >
+                                @csrf
                 <div class="contact1-boxarea" data-aos="fade-left" data-aos-duration="1200">
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="input-area">
-                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="First Name" name="first_name">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="input-area">
-                                <input type="text" placeholder="Last Name">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-area">
-                                <input type="email" placeholder="Email Address">
+                                <input type="text" placeholder="Last Name" name="last_name">
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-6">
                             <div class="input-area">
-                                <input type="number" placeholder="Phone Number">
+                                <input type="email" placeholder="Email Address" name="email">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="input-area">
+                                <input type="number" placeholder="Phone Number" name="phone">
                             </div>
                         </div>
 
@@ -122,16 +125,16 @@ Woodward Road, Knowsley Industrial Park, L33 7UY</a>
                             <div class="input-area">
                                 <select name="country" id="country" class="country-area nice-select">
                                     <option value="Boiler Services" data-display="Boiler Services">Boiler Services</option>
-                                    <option value="">Boiler Installation</option>
-                                    <option value="">Boiler Replacement</option>
-                                    <option value="">Boiler Repair</option>
+                                    <option value="Boiler Installation">Boiler Installation</option>
+                                    <option value="Boiler Replacement">Boiler Replacement</option>
+                                    <option value="Boiler Repair">Boiler Repair</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="col-lg-12 col-md-12">
                             <div class="input-area">
-                                <textarea placeholder="Type Your Message"></textarea>
+                                <textarea placeholder="Type Your Message" name="message"></textarea>
                             </div>
                         </div>
 
@@ -142,6 +145,7 @@ Woodward Road, Knowsley Industrial Park, L33 7UY</a>
                         </div>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -162,7 +166,7 @@ Woodward Road, Knowsley Industrial Park, L33 7UY</a>
                             <div class="heading1 text-center">
                                 <h2>Reliable Boiler Care – Warmth You Can Trust.</h2>
                                 <div class="space32"></div>
-                                <form method="POST" action="#">
+                                <form method="POST" action="{{ route('subscribe.store') }}">
                                     @csrf
                                     <input type="email" name="email" placeholder="Enter Your Email" required>
                                     <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>

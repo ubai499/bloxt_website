@@ -15,6 +15,7 @@ Route::get('/', function () {
 });
 
 Route::get('/contact', [GuestController::class, 'contact'])->name('contact');
+Route::post('/contact', [GuestController::class, 'contact_submit'])->name('contact.submit');
 Route::get('/about', [GuestController::class, 'about_us'])->name('about');
 Route::get('/blog', [GuestController::class, 'blog'])->name('blog');
 Route::get('/blog_details', [GuestController::class, 'blog_details'])->name('blog_details');
