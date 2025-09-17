@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\SubscriberController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +30,13 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
 
+Route::view('/subscribe', [SubscriberController::class, 'subscriber_form'])->name('subscribe.form');
+Route::post('/subscribe', [SubscriberController::class, 'store'])->name('subscribe.store');
 
+// Optional confirm route if you do double opt-in:
+Route::get('/subscribe/confirm/{token}', [SubscriberController::class, 'confirm'])->name('subscribe.confirm');
+
+Route::get('/unsubscribe/{token}', [SubscriberController::class, 'unsubscribe'])->name('unsubscribe');
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile.show');

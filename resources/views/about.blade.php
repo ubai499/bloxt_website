@@ -186,8 +186,9 @@
                             <div class="heading1 text-center">
                                 <h2>Reliable Boiler Care – Warmth You Can Trust.</h2>
                                 <div class="space32"></div>
-                                <form>
-                                    <input type="text" placeholder="Enter Your Email">
+                                 <form method="POST" action="{{ route('subscribe.store') }}">
+                                    @csrf
+                                    <input type="text" placeholder="Enter Your Email" name="email">
                                     <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                                 </form>
                             </div>
