@@ -10,6 +10,13 @@ use App\Models\Subscriber;
 class SubscriberController extends Controller
 {
 
+
+    public function index()
+    {
+        $subscribers = Subscriber::all();
+        return view('admin.subscribers.index', compact('subscribers'));
+    }
+
     public function subscriber_form(){
         return view('subscriber_form');
     }
@@ -31,7 +38,7 @@ class SubscriberController extends Controller
         // (B) If you want double opt-in:
         // Mail::to($subscriber->email)->queue(new \App\Mail\ConfirmSubscriptionMail($subscriber));
 
-        return back()->with('status', 'Subscribed! You will receive emails when new items are posted.');
+        return redirect()->back()->with('success', 'Subscribed! You will receive emails when new items are posted.');
     }
 
     // Only if using double opt-in:

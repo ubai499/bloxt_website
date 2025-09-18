@@ -80,4 +80,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::put('/products/update/{id}', [ProductController::class, 'product_update'])->name('admin.product.update');
     Route::get('/products/view/{id}', [ProductController::class, 'product_view'])->name('admin.product.view');
     Route::delete('/products/delete/{id}', [ProductController::class, 'product_delete'])->name('admin.product.delete');
+
+
+    Route::get('/subscribers', [SubscriberController::class, 'index'])->name('admin.subscribers');
 });

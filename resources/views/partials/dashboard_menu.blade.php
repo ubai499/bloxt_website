@@ -3,7 +3,7 @@
             <div class="logo-box">
                 <div class="header-left">
                         <div class="logo">
-                            <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo5.webp') }}" alt=""></a>
+                            <a href="{{url('/')}}"><img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="" style="max-width: 80px"></a>
                         </div>
                     </div>
             </div>
@@ -54,7 +54,7 @@
 
                     <li class="menu-item">
                         <a href="#menuProjects" data-bs-toggle="collapse" class="menu-link">
-                            <span class="menu-icon"><i data-feather="briefcase"></i></span>
+                            <span class="menu-icon"><i data-feather="file-text"></i></span>
                             <span class="menu-text"> Blogs </span>
                             <span class="menu-arrow"></span>
                         </a>
@@ -76,7 +76,7 @@
 
                     <li class="menu-item">
                         <a href="#blogCategory" data-bs-toggle="collapse" class="menu-link">
-                            <span class="menu-icon"><i data-feather="briefcase"></i></span>
+                            <span class="menu-icon"><i data-feather="tag"></i></span>
                             <span class="menu-text"> Blogs Categories</span>
                             <span class="menu-arrow"></span>
                         </a>
@@ -98,7 +98,7 @@
 
                     <li class="menu-item">
                         <a href="#service" data-bs-toggle="collapse" class="menu-link">
-                            <span class="menu-icon"><i data-feather="briefcase"></i></span>
+                            <span class="menu-icon"><i data-feather="tool"></i></span>
                             <span class="menu-text"> Services</span>
                             <span class="menu-arrow"></span>
                         </a>
@@ -121,7 +121,7 @@
 
                     <li class="menu-item">
                         <a href="#product" data-bs-toggle="collapse" class="menu-link">
-                            <span class="menu-icon"><i data-feather="briefcase"></i></span>
+                            <span class="menu-icon"><i data-feather="package"></i></span>
                             <span class="menu-text"> Products</span>
                             <span class="menu-arrow"></span>
                         </a>
@@ -137,6 +137,28 @@
                                         <span class="menu-text">Create Product</span>
                                     </a>
                                 </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#subscriber" data-bs-toggle="collapse" class="menu-link">
+                            <span class="menu-icon"><i data-feather="users"></i></span>
+                            <span class="menu-text"> Subscriber</span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="subscriber">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="{{route('admin.subscribers')}}" class="menu-link">
+                                        <span class="menu-text">View Subscriber</span>
+                                    </a>
+                                </li>
+                                <!-- <li class="menu-item">
+                                    <a href="{{route('admin.product.create')}}" class="menu-link">
+                                        <span class="menu-text">Create Product</span>
+                                    </a>
+                                </li> -->
                             </ul>
                         </div>
                     </li>

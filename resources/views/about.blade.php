@@ -188,7 +188,7 @@
                                 <div class="space32"></div>
                                  <form method="POST" action="{{ route('subscribe.store') }}">
                                     @csrf
-                                    <input type="text" placeholder="Enter Your Email" name="email">
+                                    <input type="text" placeholder="Enter Your Email" name="email" required>
                                     <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                                 </form>
                             </div>

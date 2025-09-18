@@ -163,88 +163,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="space32"></div>
-                        <h2>Product Comments (2)</h2>
-                        <div class="space32"></div>
-                        <div class="comments-boxarea">
-                            <p>We’d love to hear from you! Whether you’ve made the switch to solar energy, have questions about the process, or simply want to share your experience, this is the place to connect. Your feedback helps us grow and improve, so
-                                don’t hesitate to leave a comment below.</p>
-                            <div class="space16"></div>
-                            <div class="comments-boxes">
-                                <div class="comments-auhtor-box">
-                                    <div class="img3">
-                                        <img src="assets/img/all-images/others/author-img2.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="team.html" class="name">Mercedes Stiedemann</a>
-                                        <a href="#" class="date"> 8 December 2025</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
-                            </div>
-                        </div>
-                        <div class="space30"></div>
-                        <div class="comments-boxarea box2">
-                            <p>Your voice is important to us! Tell us about your journey with solar energy or ask any questions you have about the process. Our team is here to engage, assist, and help you on your path to a sustainable future.</p>
-                            <div class="space16"></div>
-                            <div class="comments-boxes">
-                                <div class="comments-auhtor-box">
-                                    <div class="img3">
-                                        <img src="assets/img/all-images/others/author-img3.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <a href="team.html" class="name">Mr. Adrian Senger</a>
-                                        <a href="#" class="date"> 12 May 2025</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
-                            </div>
-                        </div>
-
-                        <div class="space32"></div>
-                        <div class="contact-boxarea">
-                            <h2>Leave a Reply</h2>
-                            <div class="space8"></div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="input-area">
-                                        <input type="text" placeholder="First Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="input-area">
-                                        <input type="text" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="input-area">
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="input-area">
-                                        <input type="number" placeholder="Phone">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <div class="input-area">
-                                        <input type="text" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="input-area">
-                                        <textarea placeholder="Your Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="space4"></div>
-                                    <div class="input-area">
-                                        <button type="submit" class="vl-btn1">Send Now <i class="fa-solid fa-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -393,8 +313,9 @@
                                 <div class="heading1 text-center">
                                     <h2>Take the First Step Toward Energy Independence</h2>
                                     <div class="space32"></div>
-                                    <form>
-                                        <input type="text" placeholder="Enter Your Email">
+                                   <form method="POST" action="{{ route('subscribe.store') }}">
+                                    @csrf
+                                        <input type="text" placeholder="Enter Your Email" name="email" required>
                                         <button type="submit" class="vl-btn1">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                                     </form>
                                 </div>
