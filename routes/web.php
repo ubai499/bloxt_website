@@ -21,10 +21,10 @@ Route::get('/blog', [GuestController::class, 'blog'])->name('blog');
 Route::get('/blog_details', [GuestController::class, 'blog_details'])->name('blog_details');
 Route::get('/service', [GuestController::class, 'service'])->name('service');
 Route::get('/products', [GuestController::class, 'products'])->name('products');
-Route::get('/product_details', [GuestController::class, 'product_details'])->name('product_details');
+Route::get('/product_details/{id}', [GuestController::class, 'product_details'])->name('product_details');
 Route::get('/faqs', [GuestController::class, 'faqs'])->name('faqs');
 Route::get('/quote/boiler', [GuestController::class, 'quote_boiler'])->name('quote_boiler');
-
+Route::post('/quote/boiler/store', [GuestController::class, 'quote_boiler_store'])->name('quote_boiler.store');
 
 Auth::routes();
 

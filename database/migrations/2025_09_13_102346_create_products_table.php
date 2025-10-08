@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title')->nullable();
             $table->string('image')->nullable();
+            $table->string('category')->nullable();
+            $table->string('product_type')->nullable();
+            $table->string('price')->nullable();
             $table->text('description')->nullable();
             $table->json('seo_meta_data')->nullable();
             $table->foreignId('created_by')->references('id')->on('users')->onDelete('cascade');

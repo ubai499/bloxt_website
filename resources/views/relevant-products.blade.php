@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="hero-heading-area">
-                        <h2>Our Products</h2>
+                        <h2>Relevant Products</h2>
                         <div class="space18"></div>
                         <div class="btn-area1">
                             <a href="{{url('/')}}">Home <i class="fa-solid fa-angle-right"></i> <span>Our
@@ -19,11 +19,11 @@
         </div>
         <div class="hero-img1">
             <!-- <div class="img1">
-                <img src="{{asset('assets/img/elements/elements18.png')}}" alt="">
-            </div>
-            <div class="img2">
-                <img src="{{asset('assets/img/elements/elements19.png')}}" alt="">
-            </div> -->
+                            <img src="{{asset('assets/img/elements/elements18.png')}}" alt="">
+                        </div>
+                        <div class="img2">
+                            <img src="{{asset('assets/img/elements/elements19.png')}}" alt="">
+                        </div> -->
         </div>
     </div>
     <!--===== HERO AREA ENDS =======-->
@@ -59,10 +59,11 @@
                     </div>
                 @empty
                     <div class="col-12 text-center">
-                        <p>No products found.</p>
+                        <p>No products found for this boiler type and product type.</p>
                     </div>
                 @endforelse
             </div>
+
         </div>
     </div>
     <!--===== SERVICE AREA ENDS =======-->

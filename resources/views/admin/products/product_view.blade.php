@@ -36,6 +36,21 @@
                                     <p>{!! $product->description !!}</p>
                                 </div>
 
+                                <div class="mb-4">
+                                    <h5>Category</h5>
+                                    <p>{!! $product->category !!}</p>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>Product Type</h5>
+                                    <p>{!! $product->product_type !!}</p>
+                                </div>
+
+                                <div class="mb-4">
+                                    <h5>Price</h5>
+                                    <p>£{!! $product->price !!}</p>
+                                </div>
+
                                 <hr>
 
                                 <div class="mb-4">

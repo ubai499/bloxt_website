@@ -25,13 +25,16 @@ class ProductController extends Controller
     {
         try {
 
-            if($request->has('image')){
+            if ($request->has('image')) {
                 $path = $request->file('image')->move(public_path('assets/img/news'), 'post-' . time() . '.jpg');
             }
             DB::beginTransaction();
             Product::create([
                 'title' => $request->title,
                 'description' => $request->description,
+                'category' => $request->category,
+                'product_type' => $request->product_type,
+                'price' => $request->price,
                 'image' => 'assets/img/news/' . pathinfo($path)['basename'],
                 'created_by' => Auth::user()->id,
                 'seo_meta_data' => json_encode([
@@ -44,8 +47,7 @@ class ProductController extends Controller
             ]);
             DB::commit();
             return redirect()->route('admin.products')->with('success', 'Product created successfully.');
-        }
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
         }
     }
@@ -54,7 +56,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $seo_data = json_decode($product->seo_meta_data, true);
-        return view('admin.products.product_edit', compact('product','seo_data'));
+        return view('admin.products.product_edit', compact('product', 'seo_data'));
     }
 
     public function product_update(Request $request, $id)
@@ -64,13 +66,16 @@ class ProductController extends Controller
             $data = [
                 'title' => $request->title,
                 'description' => $request->description,
+                'category' => $request->category,
+                'product_type' => $request->product_type,
+                'price' => $request->price,
                 'seo_meta_data' => json_encode([
-                    'page_title' => $request->meta_title,
-                    'page_description' => $request->meta_description,
-                    'page_keywords' => $request->meta_keywords,
-                    'page_url' => $request->meta_keywords,
-                    'page_image' => $request->meta_keywords,
-                ]),
+                            'page_title' => $request->meta_title,
+                            'page_description' => $request->meta_description,
+                            'page_keywords' => $request->meta_keywords,
+                            'page_url' => $request->meta_keywords,
+                            'page_image' => $request->meta_keywords,
+                        ]),
             ];
 
             if ($request->hasFile('image')) {
@@ -82,8 +87,7 @@ class ProductController extends Controller
             $product->update($data);
             DB::commit();
             return redirect()->route('admin.products')->with('success', 'Product updated successfully.');
-        }
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Something went wrong: ' . $e->getMessage());
         }
     }
@@ -99,7 +103,7 @@ class ProductController extends Controller
     {
         try {
             $product = Product::findOrFail($id);
-            if($product){
+            if ($product) {
                 DB::beginTransaction();
                 $product->delete();
                 DB::commit();

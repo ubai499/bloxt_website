@@ -36,6 +36,21 @@
                                         <textarea class="form-control" name="description" id="description" rows="12"
                                             placeholder="Enter some brief about product.."></textarea>
                                     </div>
+
+                                    <div class="mb-3">
+                                        <label for="category" class="form-label">Category</label>
+                                        <input type="text" id="category" class="form-control" name="category" placeholder="Enter product category" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="product_type" class="form-label">Product Type</label>
+                                        <input type="text" id="product_type" class="form-control" name="product_type" placeholder="Enter product type" />
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="product_price" class="form-label">Product Price</label>
+                                        <input type="text" id="product_price" class="form-control" name="price" placeholder="Enter product price" />
+                                    </div>
                                 </div>
                             </div>
 
