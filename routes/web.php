@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogCategoryController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\QuotesController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SubscriberController;
@@ -10,22 +12,27 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-    return view('index');
-});
 
+Route::get('/', [GuestController::class, 'index'])->name('index');
 Route::get('/contact', [GuestController::class, 'contact'])->name('contact');
 Route::post('/contact', [GuestController::class, 'contact_submit'])->name('contact.submit');
 Route::get('/about', [GuestController::class, 'about_us'])->name('about');
 Route::get('/blog', [GuestController::class, 'blog'])->name('blog');
-Route::get('/blog_details', [GuestController::class, 'blog_details'])->name('blog_details');
+Route::get('/blog/{id}', [GuestController::class, 'blogDetails'])
+    ->name('blog_details');
 Route::get('/service', [GuestController::class, 'service'])->name('service');
 Route::get('/products', [GuestController::class, 'products'])->name('products');
 Route::get('/product_details/{id}', [GuestController::class, 'product_details'])->name('product_details');
 Route::get('/faqs', [GuestController::class, 'faqs'])->name('faqs');
 Route::get('/quote/boiler', [GuestController::class, 'quote_boiler'])->name('quote_boiler');
 Route::post('/quote/boiler/store', [GuestController::class, 'quote_boiler_store'])->name('quote_boiler.store');
-
+Route::get('/get-quotation', [GuestController::class, 'get_quotation'])->name('get_quotation');
+Route::post('/get-quotation/store', [GuestController::class, 'get_quotation_store'])->name('get_quotation.store');
+// routes/web.php
+Route::post('/store-financing', [GuestController::class, 'store_financing'])->name('store.financing');
+Route::post('/store-checkout', [GuestController::class, 'store_checkout'])->name('store.checkout');
+Route::get('/checkout/success', [GuestController::class, 'checkoutSuccess'])->name('checkout.success');
+Route::get('/checkout/cancel', [GuestController::class, 'checkoutCancel'])->name('checkout.cancel');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -40,6 +47,7 @@ Route::get('/subscribe/confirm/{token}', [SubscriberController::class, 'confirm'
 Route::get('/unsubscribe/{token}', [SubscriberController::class, 'unsubscribe'])->name('unsubscribe');
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile.show');
     Route::put('/profile', [ProfileController::class, 'updateProfile'])->name('profile.update');
     Route::put('/profile/password', [ProfileController::class, 'updatePassword'])->name('profile.password.update');
@@ -81,6 +89,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::get('/products/view/{id}', [ProductController::class, 'product_view'])->name('admin.product.view');
     Route::delete('/products/delete/{id}', [ProductController::class, 'product_delete'])->name('admin.product.delete');
 
-
+    Route::get('/quotes', [QuotesController::class, 'index'])->name('admin.quotes');
+    Route::get('/quotes/view/{id}', [QuotesController::class, 'quote_details'])->name('admin.quotes.view');
     Route::get('/subscribers', [SubscriberController::class, 'index'])->name('admin.subscribers');
 });

@@ -22,7 +22,7 @@
                         <div class="space38"></div>
                         <div class="play-btns-area" data-aos="fade-left" data-aos-duration="1200">
                             <div class="btn-area1">
-                                <a href="{{ route('quote_boiler')}}" class="vl-btn6">GET FIXED PRICE <i
+                                <a href="{{ route('get_quotation')}}" class="vl-btn6">GET FIXED PRICE <i
                                         class="fa-solid fa-arrow-right"></i></a>
                             </div>
                         </div>
@@ -32,6 +32,7 @@
             </div>
         </div>
     </div>
+
     <!--===== ABOUT AREA STARTS =======-->
     <div class="about5 sp1">
         <div class="container">
@@ -82,7 +83,6 @@
         </div>
     </div>
     <!--===== ABOUT AREA ENDS =======-->
-
 
     <!--===== CHOOSE AREA STARTS =======-->
     <div class="choose5 sp2">
@@ -175,156 +175,7 @@
     <!--===== CHOOSE AREA ENDS =======-->
 
 
-    <!--===== TESTIMONIALS AREA STARTS =======-->
-    <div class="testimonial5 sp1">
-        <img src="{{ asset('assets/img/elements/elements1.png') }}" alt="" class="elements1">
-        <img src="{{ asset('assets/img/elements/elements3.png') }}" alt="" class="elements2">
-        <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements3">
-        <img src="{{ asset('assets/img/elements/elements4.png') }}" alt="" class="elements4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <div class="heading5 space-margin60">
-                        <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900">
-                            <!-- SVG stays as is -->
-                            Testimonials
-                        </h5>
-                        <div class="space16"></div>
-                        <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Hear From Our Happy
-                            Clients</h2>
-                    </div>
-                </div>
-
-                <div class="col-lg-3"></div>
-                <div class="col-lg-2">
-                    <div class="testimonial-arrows text-end">
-                        <div class="testimonial-prev-arrow5">
-                            <button><i class="fa-solid fa-arrow-left"></i></button>
-                        </div>
-                        <div class="testimonial-next-arrow5">
-                            <button><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="testimonial-dots-main5">
-                        <div class="testimonial-main-slider">
-                            <div class="quoto">
-                                <!-- SVG stays as is -->
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                            <div class="space16"></div>
-                            <p class="pera">"We made the decision to go solar after learning more about the benefits, and we
-                                are so glad we chose Solarp. Our solar panels were installed quickly.</p>
-                            <div class="space24"></div>
-                            <div class="images">
-                                <div class="img1">
-                                    <img src="{{ asset('assets/img/all-images/testimonials/t-img1.png') }}" alt="">
-                                </div>
-                                <div class="text">
-                                    <a href="{{ route('contact')}}">Katona Beatrix</a>
-                                    <div class="space8"></div>
-                                    <p>Califonia, USA</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-main-slider">
-                            <div class="quoto">
-                                <!-- SVG stays as is -->
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                            <div class="space16"></div>
-                            <p class="pera">"We made the decision to go solar after learning more about the benefits, and we
-                                are so glad we chose Solarp. Our solar panels were installed quickly.</p>
-                            <div class="space24"></div>
-                            <div class="images">
-                                <div class="img1">
-                                    <img src="{{ asset('assets/img/all-images/testimonials/t-img2.png') }}" alt="">
-                                </div>
-                                <div class="text">
-                                    <a href="{{ route('contact')}}">Ebony Swihart</a>
-                                    <div class="space8"></div>
-                                    <p>New York, USA</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-main-slider">
-                            <div class="quoto">
-                                <!-- SVG stays as is -->
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                            <div class="space16"></div>
-                            <p class="pera">"We switched to solar with Solarp and couldn’t be happier! Our energy bills have
-                                significantly dropped, and we’re proud to be using clean, renewable energy.</p>
-                            <div class="space24"></div>
-                            <div class="images">
-                                <div class="img1">
-                                    <img src="{{ asset('assets/img/all-images/testimonials/t-img3.png') }}" alt="">
-                                </div>
-                                <div class="text">
-                                    <a href="{{ route('contact')}}">Daniel Porter</a>
-                                    <div class="space8"></div>
-                                    <p>Miami, USA</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-main-slider">
-                            <div class="quoto">
-                                <!-- SVG stays as is -->
-                            </div>
-                            <ul>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                                <li><i class="fa-solid fa-star"></i></li>
-                            </ul>
-                            <div class="space16"></div>
-                            <p class="pera">"We made the decision to go solar after learning more about the benefits, and we
-                                are so glad we chose Solarp. Our solar panels were installed quickly.</p>
-                            <div class="space24"></div>
-                            <div class="images">
-                                <div class="img1">
-                                    <img src="{{ asset('assets/img/all-images/testimonials/t-img4.png') }}" alt="">
-                                </div>
-                                <div class="text">
-                                    <a href="{{ route('contact')}}">Katona Beatrix</a>
-                                    <div class="space8"></div>
-                                    <p>Califonia, USA</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--===== TESTIMONIALS AREA ENDS =======-->
+    @include('partials.testimonials_section')
 
     <!--===== FAQ AREA STARTS =======-->
     <div class="faq5 sp1">
@@ -526,8 +377,7 @@
                                     fill="#b79825" />
                             </svg> Our Blog</h5>
                         <div class="space16"></div>
-                        <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Expert Tips & Industry
-                            News</h2>
+                        <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Latest News</h2>
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -540,164 +390,76 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4  col-md-6" data-aos="fade-left" data-aos-duration="900">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{ asset('assets/img/all-images/blog/blog-img11.png') }}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg> Iva Ryan</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
+                @foreach($blogs as $blog)
+                    <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="900">
+                        <div class="vl-blog-1-item">
+                            <div class="vl-blog-1-thumb image-anime">
+                                <img src="{{ asset($blog->image ?? 'assets/img/default-blog.png') }}" alt="{{ $blog->title }}">
                             </div>
-                            <div class="space16"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Panel Maintenance Tips for
-                                    Maximum Efficiency</a></h4>
 
-                            <div class="space32"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="vl-blog-1-content">
+                                <div class="vl-blog-meta">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <!-- Author Icon -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path
+                                                        d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
+                                                        stroke="#676B74" stroke-width="2" />
+                                                    <path
+                                                        d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
+                                                        stroke="#676B74" stroke-width="2" stroke-linecap="round" />
+                                                    <path
+                                                        d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
+                                                        stroke="#676B74" stroke-width="2" />
+                                                </svg>
+                                                {{ $blog->author ?? 'Admin' }}
+                                            </a>
+                                        </li>
 
-                <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{ asset('assets/img/all-images/blog/blog-img12.png') }}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg> Eddie Lake</a>
-                                    </li>
+                                        <li>
+                                            <a href="#">
+                                                <!-- Date Icon -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path
+                                                        d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
+                                                        stroke="#676B74" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
+                                                        stroke="#676B74" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                {{ $blog->created_at->format('d M, Y') }}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space16"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Trends and Innovations in Renewable
-                                    Energy</a></h4>
+                                <div class="space16"></div>
 
-                            <div class="space32"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
+                                <h4 class="vl-blog-1-title">
+                                    <a href="{{ route('blog_details', $blog->id) }}">
+                                        {{ $blog->title }}
+                                    </a>
+                                </h4>
+
+                                <div class="space32"></div>
+
+                                <div class="vl-blog-1-icon">
+                                    <a href="{{ route('blog_details', $blog->id) }}" class="vl-btn6">
+                                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{ asset('assets/img/all-images/blog/blog-img13.png') }}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Judith Rodriguez</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space16"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Top Benefits of Switching to Solar
-                                    Energy</a></h4>
-
-                            <div class="space32"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="vl-btn6">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

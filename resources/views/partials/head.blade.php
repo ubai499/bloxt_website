@@ -4,6 +4,7 @@
     <meta name="title" content="{{$page_title ?? 'Boiler Installation Liverpool | Fixed Price A-Rated Boilers' }}">
     <meta name="description" content="{{ $page_description ?? 'Get quick, fixed-price boiler installation in Liverpool—A-rated boilers installed by reliable engineers. No hidden fees, get a quote online today.' }}">
     <meta name="keywords" content="{{ $page_keywords ?? 'digital marketing agency UK, app development in UK, Bloxt Technologies' }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{$page_title ?? 'Boiler Installation Liverpool | Fixed Price A-Rated Boilers' }}</title>
 
     <!--===== FAB ICON =======-->

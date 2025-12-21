@@ -16,7 +16,7 @@
                         class="rounded-circle avatar-md" />
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="dropdown-toggle h5 mb-1 d-block"
-                            data-bs-toggle="dropdown">Geneva Kennedy</a>
+                            data-bs-toggle="dropdown">{{ Auth::user()->name }}</a>
                         <div class="dropdown-menu user-pro-dropdown">
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
@@ -44,7 +44,7 @@
                     <li class="menu-title">Navigation</li>
 
                     <li class="menu-item">
-                        <a href="{{route('dashboard')}}" class="menu-link">
+                        <a href="{{route('admin.dashboard')}}" class="menu-link">
                             <span class="menu-icon"><i data-feather="airplay"></i></span>
                             <span class="menu-text"> Dashboard </span>
                         </a>
@@ -135,6 +135,23 @@
                                 <li class="menu-item">
                                     <a href="{{route('admin.product.create')}}" class="menu-link">
                                         <span class="menu-text">Create Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#quotes" data-bs-toggle="collapse" class="menu-link">
+                            <span class="menu-icon"><i data-feather="package"></i></span>
+                            <span class="menu-text"> Quotes</span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <div class="collapse" id="quotes">
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="{{route('admin.quotes')}}" class="menu-link">
+                                        <span class="menu-text">View Quotes</span>
                                     </a>
                                 </li>
                             </ul>

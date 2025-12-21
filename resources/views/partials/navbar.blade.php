@@ -27,6 +27,9 @@
                                 <li><a href="{{ route('faqs') }}">Faq's</a>
                                 </li>
 
+                                <li><a href="{{ route('login') }}">Login</a>
+                                </li>
+
                             </ul>
                         </nav>
                     </div>

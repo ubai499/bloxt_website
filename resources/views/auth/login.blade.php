@@ -67,10 +67,6 @@
                 </form>
                 <!-- end form-->
 
-                <!-- Footer-->
-                <footer class="footer footer-alt">
-
-                </footer>
 
             </div>
             <!-- end .card-body -->
@@ -80,20 +76,6 @@
     <!-- end auth-fluid-form-box-->
 
     <!-- Auth fluid right content -->
-    <div class="auth-fluid-right text-center">
-        <div class="auth-user-testimonial">
-            <h2 class="mb-3 text-white">I love the color!</h2>
-            <p class="lead"><i class="mdi mdi-format-quote-open"></i> I've been using your theme from the previous
-                developer for our web app, once I knew new version is out, I immediately bought with no hesitation.
-                Great themes, good documentation with lots of customization
-                available and sample app that really fit our need. <i class="mdi mdi-format-quote-close"></i>
-            </p>
-            <h5 class="text-white">
-                - Fadlisaad (Bloxt Admin User)
-            </h5>
-        </div>
-        <!-- end auth-user-testimonial-->
-    </div>
     <!-- end Auth fluid right content -->
 </div>
 <!-- end auth-fluid-->

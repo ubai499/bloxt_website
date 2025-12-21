@@ -17,7 +17,8 @@ class SubscriberController extends Controller
         return view('admin.subscribers.index', compact('subscribers'));
     }
 
-    public function subscriber_form(){
+    public function subscriber_form()
+    {
         return view('subscriber_form');
     }
 

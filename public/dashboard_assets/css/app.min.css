@@ -1646,7 +1646,8 @@ body.authentication-bg-pattern {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    background: url(../images/bg-auth.jpg) center;
+    /* background: url(../images/bg-auth.jpg) center; */
+    background-color: #4b3ad7;
     background-size: cover
 }
 
