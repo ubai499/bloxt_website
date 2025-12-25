@@ -19,4 +19,18 @@ class QuotesController extends Controller
        $quote = Quotes::with('product')->findOrFail($id);
         return view('admin.quotes.quote_details', compact('quote'));
     }
+
+    public function update_status(Request $request)
+    {
+        $request->validate([
+            'quote_id' => 'required|exists:quotes,id',
+            'status' => 'required',
+        ]);
+
+        $quote = Quotes::find($request->quote_id);
+        $quote->status = $request->status;
+        $quote->save();
+
+        return redirect()->back()->with('success', 'Status updated successfully!');
+    }
 }

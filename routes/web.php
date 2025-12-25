@@ -108,6 +108,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
 
     Route::get('/quotes', [QuotesController::class, 'index'])->name('admin.quotes');
     Route::get('/quotes/view/{id}', [QuotesController::class, 'quote_details'])->name('admin.quotes.view');
+     Route::post('/quotes/update_status', [QuotesController::class, 'update_status'])->name('admin.quotes.update_status');
     Route::get('/subscribers', [SubscriberController::class, 'index'])->name('admin.subscribers');
 });
 

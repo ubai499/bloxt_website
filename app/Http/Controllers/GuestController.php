@@ -390,7 +390,7 @@ class GuestController extends Controller
 
                 if ($quote) {
                     $quote->update([
-                        'status' => 'completed',
+                        'status' => 'pending',
                         'payment_status' => 'paid',
                         'stripe_payment_intent' => $session->payment_intent,
                     ]);

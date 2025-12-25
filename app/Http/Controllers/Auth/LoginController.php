@@ -28,24 +28,6 @@ class LoginController extends Controller
     protected $redirectTo = '/dashboard';
 
     /**
-     * The user has been authenticated.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  mixed  $user
-     * @return mixed
-     */
-    protected function authenticated(\Illuminate\Http\Request $request, $user)
-    {
-        // Check if user has admin role
-        if ($user->hasRole('admin')) {
-            return redirect()->intended(route('admin.dashboard'));
-        }
-        
-        // Default to customer dashboard
-        return redirect()->intended(route('customer.dashboard'));
-    }
-
-    /**
      * Create a new controller instance.
      *
      * @return void
