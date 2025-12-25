@@ -7,11 +7,14 @@ use App\Models\Blog;
 use App\Models\Product;
 use App\Models\Quotes;
 use App\Models\Service;
+use App\Models\User;
+use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Session;
+use Str;
 
 class GuestController extends Controller
 {
@@ -68,6 +71,25 @@ class GuestController extends Controller
         // Get product details
         $product = Product::find($validated['product_id']);
 
+        // Check if user already exists
+        $user = User::where('email', $validated['email'])->first();
+        $isNewUser = false;
+        $password = null;
+
+        if (!$user) {
+            $password = Str::random(12);
+            $isNewUser = true;
+
+            // Create new user if doesn't exist
+            $user = User::create([
+                'name' => $validated['full_name'],
+                'email' => $validated['email'],
+                'password' => Hash::make($password),
+            ]);
+
+            $user->assignRole('customer');
+        }
+
         // Create quote record
         $quote = Quotes::create([
             // Customer info
@@ -114,11 +136,13 @@ class GuestController extends Controller
             // Transaction type
             'transaction_type' => 'financing',
             'status' => 'pending',
+            'client_id' => $user->id,
         ]);
 
         try {
 
-            $customerMessage = "
+            if ($isNewUser) {
+                $customerMessage = "
         <p>Dear {$validated['full_name']},</p>
 
         <p>Thank you for applying for financing with <strong>Bloxt</strong>.</p>
@@ -128,9 +152,28 @@ class GuestController extends Controller
 
         <p>If you have any questions in the meantime, feel free to reply to this email.</p>
 
+        <p>Please Login to our CRM Using {$password} as your password and your email to check the status of the application.</p>
+
         <p>Kind regards,<br>
         <strong>The Bloxt Team</strong></p>
     ";
+            } else {
+                $customerMessage = "
+        <p>Dear {$validated['full_name']},</p>
+
+        <p>Thank you for applying for financing with <strong>Bloxt</strong>.</p>
+
+        <p>We have successfully received your application. One of our team members
+        will be in touch with you shortly to discuss the next steps.</p>
+
+        <p>If you have any questions in the meantime, feel free to reply to this email.</p>
+
+        <p>Please Login to our CRM Using your password to check the status of the application.</p>
+
+        <p>Kind regards,<br>
+        <strong>The Bloxt Team</strong></p>
+    ";
+            }
 
             Mail::to($validated['email'])->send(new CustomEmail(
                 [
@@ -160,7 +203,7 @@ class GuestController extends Controller
         <p>Please log in to the Bloxt portal to view the full application details.</p>
     ";
 
-            Mail::to('info@bloxt.co.uk')->send(new CustomEmail(
+            Mail::to('moin.haider.520@gmail.com')->send(new CustomEmail(
                 [
                     'subject' => 'New Financing Application Submitted',
                     'message' => $internalMessage,
@@ -179,8 +222,6 @@ class GuestController extends Controller
 
             return back()->with('error', 'Message could not be sent.');
         }
-
-
     }
 
     public function store_checkout(Request $request)
@@ -200,6 +241,26 @@ class GuestController extends Controller
         $productPrice = is_string($product->price)
             ? floatval(str_replace(',', '', $product->price))
             : floatval($product->price);
+
+        // Check if user already exists
+        $user = User::where('email', $validated['email'])->first();
+        $isNewUser = false;
+        $password = null;
+
+        if (!$user) {
+            $password = Str::random(12);
+            $isNewUser = true;
+
+            // Create new user if doesn't exist
+            $user = User::create([
+                'name' => $validated['full_name'],
+                'email' => $validated['email'],
+                'password' => Hash::make($password),
+            ]);
+
+            $user->assignRole('customer');
+        }
+
         // Create quote record
         $quote = Quotes::create([
             // Customer info
@@ -247,6 +308,10 @@ class GuestController extends Controller
             'transaction_type' => 'checkout',
             'status' => 'pending',
             'payment_status' => 'pending',
+            'client_id' => $user->id,
+
+            // Store password flag for later use
+            'temp_password' => $isNewUser ? $password : null,
         ]);
 
         // Initialize Stripe
@@ -303,7 +368,6 @@ class GuestController extends Controller
         }
     }
 
-    // Success callback after Stripe payment
     public function checkoutSuccess(Request $request)
     {
         $sessionId = $request->get('session_id');
@@ -323,6 +387,7 @@ class GuestController extends Controller
                 // Update quote status
                 $quote = Quotes::find($quoteId);
                 $product = Product::find($quote->product_id);
+
                 if ($quote) {
                     $quote->update([
                         'status' => 'completed',
@@ -331,7 +396,33 @@ class GuestController extends Controller
                     ]);
                 }
 
-                $customerMessage = "
+                // Check if this was a new user (password was generated)
+                $isNewUser = !empty($quote->temp_password);
+
+                if ($isNewUser) {
+                    // New user - include password in email
+                    $customerMessage = "
+        <p>Dear {$quote->full_name},</p>
+
+        <p>Thank you for your purchase with <strong>Bloxt</strong>.</p>
+
+        <p>Your payment has been received successfully, and your order is now confirmed.</p>
+
+        <p><strong>Order Details:</strong><br>
+        Product: {$product->title}<br>
+        Amount Paid: £" . number_format($quote->product_price, 2) . "<br>
+        Order Reference: {$quote->id}</p>
+
+        <p>Our team will be in touch shortly to arrange the next steps.</p>
+
+        <p>Please login to our CRM to check the status of your order using your email and the following password: <strong>{$quote->temp_password}</strong></p>
+
+        <p>Kind regards,<br>
+        <strong>The Bloxt Team</strong></p>
+    ";
+                } else {
+                    // Existing user - no password
+                    $customerMessage = "
         <p>Dear {$quote->full_name},</p>
 
         <p>Thank you for your purchase with <strong>Bloxt</strong>.</p>
@@ -348,6 +439,7 @@ class GuestController extends Controller
         <p>Kind regards,<br>
         <strong>The Bloxt Team</strong></p>
     ";
+                }
 
                 Mail::to($quote->email)->send(new CustomEmail(
                     [
@@ -356,6 +448,9 @@ class GuestController extends Controller
                     ],
                     'Payment Successful – Your Bloxt Order'
                 ));
+
+                // Clear temp_password after sending email for security
+                $quote->update(['temp_password' => null]);
 
                 // =========================
                 // Internal notification email
@@ -368,7 +463,7 @@ class GuestController extends Controller
         <strong>Email:</strong> {$quote->email}<br>
         <strong>Address:</strong> {$quote->address}<br>
         <strong>Postcode:</strong> {$quote->zip_code}<br>
-                <strong>Owner Type:</strong> {$quote->ownership}<br>
+        <strong>Owner Type:</strong> {$quote->ownership}<br>
         <strong>Home Type:</strong> {$quote->home_type}<br>
         <strong>Current Boiler Type:</strong> {$quote->current_boiler_type}<br>
         <strong>Current Boiler Condition:</strong> {$quote->boiler_condition}<br>
@@ -381,7 +476,7 @@ class GuestController extends Controller
         <p>Please log in to the Bloxt portal to view full order details.</p>
     ";
 
-                Mail::to('info@bloxt.co.uk')->send(new CustomEmail(
+                Mail::to('moin.haider.520@gmail.com')->send(new CustomEmail(
                     [
                         'subject' => 'New Paid Order – Bloxt Checkout',
                         'message' => $internalMessage,

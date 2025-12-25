@@ -351,6 +351,198 @@
     </div>
     <!--===== FAQ AREA ENDS =======-->
 
+    <!--===== MYHOME SECTION STARTS =======-->
+    <div class="home-hub-section sp2" style="background: linear-gradient(135deg, #b79825 0%, #e7be2dff 100%);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="home-hub-mascot text-center">
+                        <img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="BLOXT LTD"
+                            style="max-width: 450px; width: 100%;filter: brightness(0) invert(1);">
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="home-hub-content">
+                        <h2 style="color: #fff; font-size: 48px; font-weight: 700; margin-bottom: 24px;">
+                            MyHome Portal
+                        </h2>
+
+                        <p style="color: #fff; font-size: 18px; margin-bottom: 24px;">
+                            MyHome Portal is your personal dashboard for managing everything related to your home services,
+                            all in one place.
+                        </p>
+
+                        <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Track and manage your orders in real time
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Access your complete order history
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                View and download warranty documents
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Log issues and support requests quickly
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Manage your cover and service plans
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Enjoy a faster, simplified checkout experience
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Access helpful guides and support resources
+                            </li>
+                            <li
+                                style="color: #fff; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center;">
+                                <span
+                                    style="width: 8px; height: 8px; background: #000; border-radius: 50%; margin-right: 12px;"></span>
+                                Receive exclusive discounts of up to 20% on leading brands
+                            </li>
+                        </ul>
+
+                        <p style="color: #fff; font-size: 16px; margin-bottom: 32px;">
+                            With a single, centralised portal for all your home services, we make it easier to stay
+                            informed,
+                            organised, and in control.
+                        </p>
+
+                        <a href="{{ route('register') }}" class="btn"
+                            style="background: #fff; color: #b79825; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">
+                            LOGIN / CREATE ACCOUNT
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===== MYHOME SECTION ENDS =======-->
+
+    <!--===== HOW IT WORKS SECTION STARTS =======-->
+    <div class="how-it-works-section sp2" style="background: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="heading5 text-center mb-5">
+                        <h2 class="vl-section-title" data-aos="fade-up" data-aos-duration="1000"
+                            style="font-size: 64px; font-weight: 700;">HOW IT <span
+                                style="background: #fff; padding: 8px 24px; display: inline-block; transform: rotate(-2deg);">WORKS</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="900">
+                    <div class="how-it-works-card"
+                        style="background: #fff; border-radius: 16px; padding: 48px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="color: #b79825; font-size: 48px; font-weight: 700; margin-bottom: 24px;">Browse</h3>
+                            <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Select Your Boiler Service</h4>
+                            <p style="font-size: 18px; color: #333; line-height: 1.6;">Explore our range of boiler services including installations, repairs, maintenance, and upgrades. Choose the solution that best fits your heating needs.</p>
+                        </div>
+                        <div class="text-end mt-4">
+                            <!-- <img src="{{ asset('assets/img/all-images/phone-mockup.png') }}" alt="Phone Mockup"
+                                style="max-width: 250px; width: 100%;"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="how-it-works-card"
+                        style="background: #fff; border-radius: 16px; padding: 48px; min-height: 400px; display: flex; align-items: center;">
+                        <div class="row align-items-center w-100">
+                            <div class="col-md-5">
+                                <img src="{{ asset('assets/img/all-images/boiler-unit.png') }}" alt="Boiler Unit"
+                                    style="max-width: 200px; width: 100%;">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 style="color: #b79825; font-size: 48px; font-weight: 700; margin-bottom: 24px;">Book
+                                </h3>
+                                <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Pick Your Preferred Time</h4>
+                                <p style="font-size: 18px; color: #333; line-height: 1.6;">Simply book a date and time that suits your schedule best. We respect your time and work around your convenience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-duration="900">
+                    <div class="how-it-works-card"
+                        style="background: #fff; border-radius: 16px; padding: 48px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="color: #b79825; font-size: 48px; font-weight: 700; margin-bottom: 24px;">Book</h3>
+                            <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Pick Your Preferred Time</h4>
+                            <p style="font-size: 18px; color: #333; line-height: 1.6;">Simply book a date and time that suits your schedule best. We respect your time and work around your convenience.</p>
+                        </div>
+                        <div class="text-end mt-4">
+                            <!-- <img src="{{ asset('assets/img/all-images/phone-mockup.png') }}" alt="Phone Mockup"
+                                style="max-width: 250px; width: 100%;"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+                <!-- <div class="col-lg-8 mb-4" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="how-it-works-card"
+                        style="background: #fff; border-radius: 16px; padding: 48px; min-height: 400px; display: flex; align-items: center;">
+                        <div class="row align-items-center w-100">
+                            <div class="col-md-5">
+                                <img src="{{ asset('assets/img/all-images/boiler-unit.png') }}" alt="Boiler Unit"
+                                    style="max-width: 200px; width: 100%;">
+                            </div>
+                            <div class="col-md-7">
+                                <h3 style="color: #b79825; font-size: 48px; font-weight: 700; margin-bottom: 24px;">We Deliver
+                                </h3>
+                                <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Professional Service</h4>
+                                <p style="font-size: 18px; color: #333; line-height: 1.6;">Our certified engineers deliver expert boiler installation, repair, or maintenance. Our customer care team supports you every step of the way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-8 mb-4" data-aos="fade-up" data-aos-duration="900">
+                    <div class="how-it-works-card"
+                        style="background: #fff; border-radius: 16px; padding: 48px; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="color: #b79825; font-size: 48px; font-weight: 700; margin-bottom: 24px;">We Deliver</h3>
+                            <h4 style="font-size: 24px; font-weight: 600; margin-bottom: 16px;">Professional Service</h4>
+                            <p style="font-size: 18px; color: #333; line-height: 1.6;">Our certified engineers deliver expert boiler installation, repair, or maintenance. Our customer care team supports you every step of the way.</p>
+                        </div>
+                        <div class="text-end mt-4">
+                            <!-- <img src="{{ asset('assets/img/all-images/phone-mockup.png') }}" alt="Phone Mockup"
+                                style="max-width: 250px; width: 100%;"> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+
     <!--===== BLOG AREA STARTS =======-->
     <div class="vl-blog-5-area sp2">
         <img src="{{ asset('assets/img/elements/elements1.png') }}" alt="" class="elements1">

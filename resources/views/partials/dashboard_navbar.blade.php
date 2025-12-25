@@ -4,13 +4,13 @@
                         <!-- Topbar Brand Logo -->
                         <div class="logo-box">
                             <!-- Brand Logo Light -->
-                            <a href="{{route('dashboard')}}" class="logo-light">
+                            <a href="{{ route(auth()->user()->hasRole('admin') ? 'admin.dashboard' : 'customer.dashboard') }}" class="logo-light">
                                 <img src="{{asset('assets/img/logo/Favicon.png')}}" alt="logo"
                                     class="logo-lg" />
                             </a>
 
                             <!-- Brand Logo Dark -->
-                            <a href="{{route('dashboard')}}" class="logo-dark">
+                            <a href="{{ route(auth()->user()->hasRole('admin') ? 'admin.dashboard' : 'customer.dashboard') }}" class="logo-dark">
                                  <img src="{{asset('assets/img/logo/Favicon.png')}}" alt="logo"
                                     class="logo-lg" />
                             </a>
@@ -50,7 +50,7 @@
                                 </div>
 
                                 <!-- item-->
-                                <a href="{{route('profile.show')}}" class="dropdown-item notify-item">
+                                <a href="{{ route(auth()->user()->hasRole('admin') ? 'profile.show' : 'customer.profile.show') }}" class="dropdown-item notify-item">
                                     <i class="fe-user"></i>
                                     <span>My Account</span>
                                 </a>

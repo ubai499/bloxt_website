@@ -8,9 +8,26 @@ use App\Http\Controllers\Admin\QuotesController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SubscriberController;
+
+use App\Http\Controllers\Customer\DashboardController as CustomerDashboardController;
+use App\Http\Controllers\Customer\ProfileController as CustomerProfileController;
+use App\Http\Controllers\Customer\QuotesController as CustomerQuotesController;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use Illuminate\Support\Facades\Auth;
+
+
+Auth::routes();
+
+
+Route::get('/dashboard', function () {
+    if (Auth::user()->hasRole('admin')) {
+        return redirect()->route('admin.dashboard');
+    } elseif (Auth::user()->hasRole('customer')) {
+        return redirect()->route('customer.dashboard');
+    }
+})->name('dashboard');
 
 
 Route::get('/', [GuestController::class, 'index'])->name('index');
@@ -92,4 +109,15 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
     Route::get('/quotes', [QuotesController::class, 'index'])->name('admin.quotes');
     Route::get('/quotes/view/{id}', [QuotesController::class, 'quote_details'])->name('admin.quotes.view');
     Route::get('/subscribers', [SubscriberController::class, 'index'])->name('admin.subscribers');
+});
+
+Route::middleware(['auth', 'role:customer'])->prefix('customer')->group(function () {
+    Route::get('/dashboard', [CustomerDashboardController::class, 'index'])->name('customer.dashboard');
+    Route::get('/profile', [CustomerProfileController::class, 'showProfile'])->name('customer.profile.show');
+    Route::put('/profile', [CustomerProfileController::class, 'updateProfile'])->name('customer.profile.update');
+    Route::put('/profile/password', [CustomerProfileController::class, 'updatePassword'])->name('customer.profile.password.update');
+
+
+    Route::get('/quotes', [CustomerQuotesController::class, 'index'])->name('customer.quotes');
+    Route::get('/quotes/view/{id}', [CustomerQuotesController::class, 'quote_details'])->name('customer.quotes.view');
 });

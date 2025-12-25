@@ -13,8 +13,16 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->redirectUsersTo(function (Request $request) {
-        return '/dashboard';
-    });
+            // Check if user is authenticated and has a role
+            if ($request->user()) {
+                if ($request->user()->hasRole('admin')) {
+                    return '/admin/dashboard';
+                }
+                // Default to customer dashboard
+                return '/customer/dashboard';
+            }
+            return '/dashboard';
+        });
         $middleware->alias([
             'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
             'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,

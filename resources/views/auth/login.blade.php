@@ -1,19 +1,20 @@
 @extends('layouts.app')
 @section('content')
-<div class="auth-fluid">
-    <div class="auth-fluid-form-box">
-        <div class="align-items-center d-flex h-100">
-            <div class="p-3">
+    <div class="auth-fluid">
+        <div class="auth-fluid-form-box">
+            <div class="align-items-center d-flex h-100">
+                <div class="p-3">
 
-                <!-- Logo -->
-                <div class="auth-brand text-center text-lg-start">
-                    <div class="auth-brand">
-                        <a href="{{ url('/') }}" class="logo logo-dark text-center">
-                            <div class="logo">
-                                <a href="{{url('/')}}" class="header-logo">
-                                    <img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="logo-img" style="width:120px;"></a>
-                                </a>
-                            </div>
+                    <!-- Logo -->
+                    <div class="auth-brand text-center text-lg-start">
+                        <div class="auth-brand">
+                            <a href="{{ url('/') }}" class="logo logo-dark text-center">
+                                <div class="logo">
+                                    <a href="{{url('/')}}" class="header-logo">
+                                        <img src="{{ asset('assets/img/logo/logo5.webp') }}" alt="logo-img"
+                                            style="width:120px;"></a>
+                            </a>
+                        </div>
                         </a>
                     </div>
                 </div>
@@ -28,12 +29,11 @@
                     <div class="mb-3">
                         <label for="emailaddress" class="form-label">Email address</label>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                            id="emailaddress" name="email" value="{{ old('email') }}" autocomplete="email"
-                            autofocus>
+                            id="emailaddress" name="email" value="{{ old('email') }}" autocomplete="email" autofocus>
                         @error('email')
-                        <span class="invalid-feedback text-danger" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
+                            <span class="invalid-feedback text-danger" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
                         @enderror
                     </div>
                     <div class="mb-3">
@@ -45,9 +45,9 @@
                                 class="form-control @error('password') is-invalid @enderror" name="password" id="password"
                                 autocomplete="current-password">
                             @error('password')
-                            <span class="invalid-feedback text-danger" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
+                                <span class="invalid-feedback text-danger" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
                             @enderror
                             <div class="input-group-text" data-password="false">
                                 <span class="password-eye"></span>
@@ -64,6 +64,12 @@
                     <div class="text-center d-grid">
                         <button class="btn btn-primary" type="submit">Log In </button>
                     </div>
+                    <br/>
+                    <div class="row mb-0">
+                        <div>
+                            <a class="text-end" style="float:right;" href="{{ route('register') }}">Register</a>
+                        </div>
+                    </div>
                 </form>
                 <!-- end form-->
 
@@ -77,6 +83,6 @@
 
     <!-- Auth fluid right content -->
     <!-- end Auth fluid right content -->
-</div>
-<!-- end auth-fluid-->
+    </div>
+    <!-- end auth-fluid-->
 @endsection

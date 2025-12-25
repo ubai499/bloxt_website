@@ -50,6 +50,7 @@ class Quotes extends Model
         'stripe_session_id',
         'stripe_payment_intent',
         'payment_status',
+        'client_id',
     ];
 
     public function product()

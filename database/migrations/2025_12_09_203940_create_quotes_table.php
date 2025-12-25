@@ -68,6 +68,7 @@ return new class extends Migration {
             $table->string('stripe_session_id')->nullable();
             $table->string('stripe_payment_intent')->nullable();
             $table->enum('payment_status', ['pending', 'paid', 'failed'])->nullable();
+            $table->string('client_id')->nullable();
 
             $table->timestamps();
         });
