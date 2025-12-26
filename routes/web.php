@@ -12,6 +12,8 @@ use App\Http\Controllers\Admin\SubscriberController;
 use App\Http\Controllers\Customer\DashboardController as CustomerDashboardController;
 use App\Http\Controllers\Customer\ProfileController as CustomerProfileController;
 use App\Http\Controllers\Customer\QuotesController as CustomerQuotesController;
+use App\Http\Controllers\Customer\ProductsController as CustomerProductController;
+use App\Http\Controllers\Customer\BlogsController;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
@@ -108,7 +110,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
 
     Route::get('/quotes', [QuotesController::class, 'index'])->name('admin.quotes');
     Route::get('/quotes/view/{id}', [QuotesController::class, 'quote_details'])->name('admin.quotes.view');
-     Route::post('/quotes/update_status', [QuotesController::class, 'update_status'])->name('admin.quotes.update_status');
+    Route::post('/quotes/update_status', [QuotesController::class, 'update_status'])->name('admin.quotes.update_status');
     Route::get('/subscribers', [SubscriberController::class, 'index'])->name('admin.subscribers');
 });
 
@@ -121,4 +123,10 @@ Route::middleware(['auth', 'role:customer'])->prefix('customer')->group(function
 
     Route::get('/quotes', [CustomerQuotesController::class, 'index'])->name('customer.quotes');
     Route::get('/quotes/view/{id}', [CustomerQuotesController::class, 'quote_details'])->name('customer.quotes.view');
+
+    Route::get('/products', [CustomerProductController::class, 'index'])->name('customer.products');
+    Route::get('/products/view/{id}', [CustomerProductController::class, 'view'])->name('customer.product.view');
+
+    Route::get('/blogs', [BlogsController::class, 'index'])->name('customer.blogs');
+    Route::get('/blogs/view/{id}', [BlogsController::class, 'view'])->name('customer.blog.view');
 });

@@ -200,6 +200,38 @@
                     </ul>
                 </div>
             </li>
+            <li class="menu-item">
+                <a href="#products" data-bs-toggle="collapse" class="menu-link">
+                    <span class="menu-icon"><i data-feather="package"></i></span>
+                    <span class="menu-text"> Products</span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="products">
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="{{route('customer.products')}}" class="menu-link">
+                                <span class="menu-text">View Products</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <a href="#blogs" data-bs-toggle="collapse" class="menu-link">
+                    <span class="menu-icon"><i data-feather="package"></i></span>
+                    <span class="menu-text"> Blogs</span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="blogs">
+                    <ul class="sub-menu">
+                        <li class="menu-item">
+                            <a href="{{route('customer.blogs')}}" class="menu-link">
+                                <span class="menu-text">View Blogs</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
             @endrole
         </ul>
         <!--- End Menu -->
