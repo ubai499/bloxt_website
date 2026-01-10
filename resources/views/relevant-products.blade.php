@@ -764,16 +764,29 @@
         }
     </style>
 
-    @include('partials.page_title', ['title' => 'Suggested Products For You', 'bgColor' => '#b79825'])
-
+    <section id="subheader" class="jarallax text-light">
+            <img src="{{ asset('assets/images/background/11.webp')}}" class="jarallax-img" alt="">
+            <div class="container relative z-index-1000">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Discover</div>
+                        <h1>Products</h1>
+                        <ul class="crumb">
+                            <li><a href="{{url('/')}}">Home</a></li>
+                            <li class="active">Products</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <div class="fs-20 fw-600 no-bottom sm-hide">Air Conditioning and Heating Specialists</div>
+                    </div>
+                </div>
+            </div>
+            <div class="de-overlay"></div>
+        </section>
+        
     <!--===== SERVICE AREA STARTS =======-->
     <div class="products-section">
         <div class="container">
-            <div class="products-header" data-aos="fade-up" data-aos-duration="800">
-                <h2>Our Products</h2>
-                <p>Discover our range of high-quality boiler products designed to meet your heating needs</p>
-            </div>
-
             <div class="row">
                 @forelse($products as $product)
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="800" data-aos-offset="80">

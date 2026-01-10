@@ -559,7 +559,8 @@ class GuestController extends Controller
 
     public function blog()
     {
-        return view('blogs');
+        $blogs = Blog::all();
+        return view('blogs',compact('blogs'));
     }
 
     public function service()

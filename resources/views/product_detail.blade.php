@@ -1,32 +1,56 @@
 @extends('layouts.master')
 @section('content')
 
-    @include('partials.page_title', ['title' => 'Product Details', 'bgColor' => '#b79825'])
 
-    <!--===== Product AREA STARTS =======-->
-    <div class="blog-details-section sp1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="blog-main-details heading1">
-                        <div class="img1">
-                            <img src="{{ asset($product->image ?? 'assets/upload/default-boiler.png') }}" alt=""
-                                width="350">
+
+<div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader">
+                <div class="container relative z-index-1000">
+                    <div class="row g-4 gx-5">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Product</div>
+                            <h1>{{ $product->title }}</h1>
                         </div>
-                        <div class="space32"></div>
-                        <h2>{{ $product->title }} - £{!! $product->price !!}</h2>
-                        <div class="space16"></div>
-                        <p>{!! strip_tags($product->description) !!}</p>
-                        <div class="space16"></div>
-                        <p>Switching to solar energy isn’t just about environmental responsibility t’s also a smart
-                            financial decision. By generating electricity directly from the sun, solar panels can
-                            significantly reduce monthly utility bills for both
-                            homeowners and businesses. With government incentives, tax credits, and financing option.</p>
-                        <p><b>Category:</b> {{ $product->category }}</p>
-                        <p><b>Product Type:</b> {{ $product->product_type }}</p>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-lg-6">
+                            <div class="bg-color-3 relative hover overflow-hidden rounded-20px">
+                               <div class="text-center py-3">
+                                   <img src="{{ asset($product->image ?? 'assets/upload/default-boiler.png') }}" class="w-80" alt="">
+                                   <h4>{{ $product->title }}</h4>
+                               </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="row g-4 relative z-1000">
+                                <div class="col-6">
+                                    <div class="bg-color h-100 text-light rounded-10 p-4">
+                                        <div class="fw-bold">Category</div>
+                                        <div class="fs-14">{{ $product->category }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-color h-100 text-light rounded-10 p-4">
+                                        <div class="fw-bold">Type</div>
+                                        <div class="fs-14">{{ $product->type }}</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="spacer-single"></div>
+
+                            <p>{!! strip_tags($product->description) !!}</p>
+
+                            <div class="spacer-half"></div>
+
+                            <a class="btn-main" href="{{ route('contact') }}">Contact Us</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>            
         </div>
-    </div>
 @endsection

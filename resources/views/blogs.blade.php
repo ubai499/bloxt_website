@@ -1,489 +1,60 @@
 @extends('layouts.master')
 @section('content')
-    @include('partials.page_title', ['title' => 'Blogs', 'bgColor' => '#b79825'])
-
-    <!--===== BLOG AREA STARTS =======-->
-    <div class="blog-v2-section sp1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6  col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img1.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="{{route('blog_details')}}"><svg xmlns="http://www.w3.org/2000/svg"
-                                                width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg> Iva Ryan</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog_details')}}">Innovations in Solar
-                                    Technology</a></h4>
-                            <div class="space16"></div>
-                            <p>The solar industry is advancing at a rapid pace, bringing us exciting innovations like solar
-                                shingles, AI energy optimization, and more efficient photovoltaic cells. Discover how these
-                                technologies.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog_details')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img2.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg> Eddie Lake</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Community Solar Programs</a></h4>
-                            <div class="space16"></div>
-                            <p>Community solar programs are making renewable energy accessible to people who can't install
-                                their own panels. This blog explains how these programs work and why they're a game-changer
-                                for clean.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img26.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure
-                                they operate efficiently for years to come. This guide provides tips on cleaning,
-                                inspections, and maximizing.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img3.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Curious about what the solar installation process entails? In this blog, we walk you through
-                                each step—from the initial consultation to final implementation so you know exactly what to
-                                expect when making.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img27.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure
-                                they operate efficiently for years to come. This guide provides tips on cleaning,
-                                inspections, and maximizing.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{asset('assets/img/all-images/blog/blog-img28.png')}}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Curious about what the solar installation process entails? In this blog, we walk you through
-                                each step—from the initial consultation to final implementation so you know exactly what to
-                                expect when making.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{ asset('assets/img/all-images/blog/blog-img29.png') }}" alt="">
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">How to Maintain Your Solar Panels</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Solar panels are relatively low maintenance, but there are still steps you can take to ensure
-                                they operate efficiently for years to come. This guide provides tips on cleaning,
-                                inspections, and maximizing.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="vl-blog-1-item">
-                        <div class="vl-blog-1-thumb image-anime">
-                            <img src="{{ asset('assets/img/all-images/blog/blog-img30.png') }}" alt="">
-
-                        </div>
-                        <div class="vl-blog-1-content">
-                            <div class="vl-blog-meta">
-                                <ul>
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path
-                                                    d="M16 18C15.705 17.1395 15.0545 16.3786 14.1513 15.8362C13.2472 15.2938 12.1387 15 11 15C9.86128 15 8.75276 15.2938 7.84869 15.8362C6.94548 16.3786 6.29589 17.1395 6 18"
-                                                    stroke="#676B74" stroke-width="2" />
-                                                <path
-                                                    d="M10.5 11C11.8807 11 13 9.88071 13 8.5C13 7.11929 11.8807 6 10.5 6C9.11929 6 8 7.11929 8 8.5C8 9.88071 9.11929 11 10.5 11Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round" />
-                                                <path
-                                                    d="M15.5 3H5.5C4.11929 3 3 4.11929 3 5.5V15.5C3 16.8807 4.11929 18 5.5 18H15.5C16.8807 18 18 16.8807 18 15.5V5.5C18 4.11929 16.8807 3 15.5 3Z"
-                                                    stroke="#676B74" stroke-width="2" />
-                                            </svg>Autumn Phillips</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M7 2V5M14 2V5" stroke="#676B74" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M16.3333 4H4.66667C3.74619 4 3 4.74619 3 5.66667V17.3333C3 18.2538 3.74619 19 4.66667 19H16.3333C17.2538 19 18 18.2538 18 17.3333V5.66667C18 4.74619 17.2538 4 16.3333 4Z"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                                <path
-                                                    d="M3 9H18M7.16667 12.5H7.175M10.5 12.5H10.5083M13.8333 12.5H13.8417M7.16667 16H7.175M10.5 16H10.5083M13.8333 16H13.8417"
-                                                    stroke="#676B74" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg> 10 Sep, 2024</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="space24"></div>
-                            <h4 class="vl-blog-1-title"><a href="{{ route('blog')}}">Solar Installation What to Expect</a>
-                            </h4>
-                            <div class="space16"></div>
-                            <p>Curious about what the solar installation process entails? In this blog, we walk you through
-                                each step—from the initial consultation to final implementation so you know exactly what to
-                                expect when making.</p>
-                            <div class="space24"></div>
-                            <div class="vl-blog-1-icon">
-                                <a href="{{ route('blog')}}" class="readmore">Learn More <i
-                                        class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="space30"></div>
-                    <div class="pagination-area">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <i class="fa-solid fa-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                    </a>
-                                </li>
+    <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader" class="jarallax text-light">
+                <img src="{{ asset('assets/images/background/7.webp')}}" class="jarallax-img" alt="">
+                <div class="container relative z-index-1000">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Blog</div>
+                            <h1>Stay Up to Date</h1>
+                            <ul class="crumb">
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li class="active">Blog</li>
                             </ul>
-                        </nav>
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <div class="fs-20 fw-600 no-bottom sm-hide">Air Conditioning and Heating Specialists</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!--===== BLOG AREA ENDS =======-->
+                <div class="de-overlay"></div>
+            </section>
+            <!-- section close -->
 
-    @include('partials.cta_section')
+            <div class="bg-color relative z-index-1000 mt-40 mb40">
+                <div class="border-white-6 text-center bg-color text-white w-84px h-80px p-3 circle absolute abs-center sm-hide" alt="">
+                    <i class="icofont-newspaper fs-36"></i>
+                </div>
+            </div>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4">
+                         @foreach($blogs as $blog)
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="bloglist rounded-20px">
+                                    <div class="post-content">
+                                        <div class="post-image">
+                                            <div class="d-tagline">
+                                                <span>{{ $blog->created_at->format('d M, Y') }}</span>
+                                            </div>
+                                            <img alt="" src="{{ asset($blog->image ?? 'assets/images/news/1.webp') }}" class="lazy">
+                                        </div>
+                                        <div class="post-text padding40 pt-2 h-100">
+                                            <h4><a href="{{ route('blog_details', $blog->id)}}">{{ $blog->title }}</a></h4>
+                                            <p>{!! Str::limit(strip_tags($blog->description), 250, '...') !!}</p>
+                                            <a class="btn-main btn-light-trans mt-3" href="{{ route('blog_details', $blog->id)}}">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        </div>
+
 @endsection

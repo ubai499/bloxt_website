@@ -1559,8 +1559,18 @@
                         area and provide you with a personalized quote.</p>
                 </div>
                 <div class="form-input-group">
+                    <label for="demo_full_name">Full Name <span style="color: #dc3545;">*</span></label>
+                    <input type="text" id="demo_full_name" name="demo_full_name" class="form-input" placeholder="Enter your Full Name"
+                        required>
+                </div>
+                <div class="form-input-group">
                     <label for="zip_code">Post Code <span style="color: #dc3545;">*</span></label>
                     <input type="text" id="zip_code" name="zip_code" class="form-input" placeholder="Enter your Post code"
+                        required>
+                </div>
+                <div class="form-input-group">
+                    <label for="demo_contact">Contact Number <span style="color: #dc3545;">*</span></label>
+                    <input type="text" id="demo_contact" name="demo_contact" class="form-input" placeholder="Enter your Contact Number"
                         required>
                 </div>
                 <button type="submit" class="submit-button">Get My Quote →</button>

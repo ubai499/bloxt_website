@@ -2,102 +2,95 @@
 
 @section('content')
 
-    @include('partials.page_title', [
-        'title' => $blog->title,
-        'bgColor' => '#b79825'
-    ])
-
     @php
         $blogUrl = url()->current();
         $shareText = urlencode($blog->title);
     @endphp
 
-    <div class="blog-details-section sp1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <div class="blog-main-details heading1">
 
-                        {{-- Blog Image --}}
-                        <div class="img1">
-                            <img src="{{ asset($blog->image ?? 'assets/img/all-images/blog/blog-img31.png') }}"
-                                 alt="{{ $blog->title }}">
+<div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader" class="jarallax text-light">
+                <img src="{{ asset($blog->image ?? 'assets/images/background/7.webp') }}" class="jarallax-img" alt="">
+                <div class="container relative z-index-1000">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle s2 bg-color text-light wow fadeInUp mb-2">Our Blog</div>
+                            <h1>{{ $blog->title }}</h1>
+                            <ul class="crumb">
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li class="active">Blog</li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="de-overlay"></div>
+            </section>
+            <!-- section close -->
 
-                        <div class="space32"></div>
+            <div class="bg-color relative z-index-1000 mt-40 mb40">
+                <div class="border-white-6 text-center bg-color text-white w-84px h-80px p-3 circle absolute abs-center sm-hide" alt="">
+                    <i class="icofont-newspaper fs-36"></i>
+                </div>
+            </div>
 
-                        {{-- Author / Meta --}}
-                        <ul class="list-author">
-                            <li>
-                                <a href="#">
-                                    {{ $blog->author->name ?? 'Admin' }}
-                                    <span> | </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#">
-                                    {{ $blog->created_at->format('d F Y') }}
-                                </a>
-                            </li>
-                        </ul>
-
-                        <div class="space24"></div>
-
-                        {{-- Blog Content --}}
-                        <div class="blog-content">
-                            {!! $blog->description !!}
-                        </div>
-
-                        <div class="space32"></div>
-
-                        {{-- Share Section --}}
-                        <div class="tags-social">
-                            <div class="social">
-                                <ul>
-                                    <li>Share:</li>
-
-                                    {{-- Facebook --}}
-                                    <li>
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{ $blogUrl }}"
-                                           target="_blank">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-
-                                    {{-- WhatsApp --}}
-                                    <li>
-                                        <a href="https://wa.me/?text={{ $shareText }}%20{{ $blogUrl }}"
-                                           target="_blank">
-                                            <i class="fa-brands fa-whatsapp"></i>
-                                        </a>
-                                    </li>
-
-                                    {{-- Twitter / X --}}
-                                    <li>
-                                        <a href="https://twitter.com/intent/tweet?text={{ $shareText }}&url={{ $blogUrl }}"
-                                           target="_blank">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                    </li>
-
-                                    {{-- LinkedIn --}}
-                                    <li>
-                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ $blogUrl }}"
-                                           target="_blank">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+            <section>
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-12">
+                            <div class="blog-read">
+                                <div class="post-text">
+                                   {!! strip_tags($blog->description) !!}
+                                </div>
                             </div>
                         </div>
 
+                        <!-- <div class="col-lg-4">
+                            <div class="widget widget-post">
+                                <h4>Recent Posts</h4>
+                                <ul class="de-bloglist-type-1">
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-1.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#"><h4>Harnessing Technology for Energy-Efficient AC</h4></a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-2.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#"><h4>The Impact of Air Conditioning on Indoor Air Quality</h4></a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-3.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#"><h4>Cybersecurity in the Digital Age</h4></a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/pic-blog-4.jpg" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#"><h4>Balancing Progress and Responsibility</h4></a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
-
-    @include('partials.cta_section')
-
 @endsection
